@@ -2,6 +2,10 @@
 
 # generate private/public key for autologin as root
 
+mkdir /root/.ssh
+chown root:root /root/.ssh
+chmod 700 /root/.ssh
+
 # the private key: use the following key on the ssh client side (copied here for reference)
 cat <<EOF >/root/.ssh/id_eat_dsa
 -----BEGIN DSA PRIVATE KEY-----
