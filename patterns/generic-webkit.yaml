@@ -1,0 +1,17 @@
+Description: Generic Webkit
+Name: webkit
+Packages:
+- wrt-widgets
+- wrt
+- wrt-commons
+- wrt-installer
+- wrt-installer-preinstall-service
+- wrt-plugins-tizen
+- wrt-security
+- webkit2-efl-test
+- web-ui-fw
+- web-ui-fw-demo-tizen-winsets
+- web-ui-fw-theme-default
+- web-ui-fw-theme-tizen-black
+- web-ui-fw-theme-tizen-white
+Summary: Base System

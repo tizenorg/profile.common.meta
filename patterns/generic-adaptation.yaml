@@ -2,7 +2,4 @@ Description: Generic Adaptation
 Name: generic-adaptation
 Packages:
 - linux-firmware
-- kernel-x86-generic
-- dlogutil
-- system-installer
 Summary: Generic Adaptation
