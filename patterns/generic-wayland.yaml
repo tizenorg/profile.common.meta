@@ -4,6 +4,7 @@ Packages:
 - cantarell-fonts
 - dejavu-fonts
 - weston
+- mesa
 - xkeyboard-config
 - tizen-branding-default
 - user-session-units

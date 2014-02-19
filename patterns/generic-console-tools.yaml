@@ -25,6 +25,5 @@ Packages:
 - sudo
 - ca-certificates-mozilla
 - iptables
-- net-config
 - tree
 Summary: Generic Console Tools

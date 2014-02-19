@@ -4,4 +4,5 @@ Packages:
 - emotion
 - econnman
 - bluetooth-agent
+- net-config
 Summary: Generic Desktop Applications
