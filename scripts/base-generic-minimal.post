@@ -1,4 +1,0 @@
-################### base-generic-minimal.post #################
-
-rm /usr/lib/systemd/system/default.target
-ln -sf multi-user.target  /usr/lib/systemd/system/default.target

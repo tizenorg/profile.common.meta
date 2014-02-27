@@ -1,4 +1,4 @@
-###################### base-x11-default.post ###################
+###################### generic-x11.post ###################
 
 # enable X11 forwarding on ssh
 echo "X11Forwarding yes" >>/etc/ssh/sshd_config

@@ -1,14 +1,14 @@
-Name: Generic QA Unsafe X11 MBR x86_64
-Architecture: x86_64
+Name: Generic Minimal MBR i586
 Schedule: "*"
 Active: True
-Platform: X11
+Platform: Minimal
 Part: generic-mbr
-FileName: generic-qa-unsafe-x11-mbr-x86_64
+FileName: generic-minimal-mbr-i586
 Kernel: kernel-x86-generic
 Repos:
-    - generic-x11_x86_64
+    - generic-wayland_i586
 Groups:
     - Generic Automated QA Tools
 PostScripts:
     - generic-autoqa
+

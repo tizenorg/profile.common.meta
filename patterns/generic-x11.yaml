@@ -1,3 +1,4 @@
+Summary: Generic X11
 Description: Generic X11
 Name: generic-x11
 Packages:
@@ -5,4 +6,6 @@ Packages:
 - xf86-input-synaptics
 - xf86-video-intel
 - xf86-input-keyboard
-Summary: Generic X11
+- xorg-launch-helper
+- enlightenment
+- user-session-units

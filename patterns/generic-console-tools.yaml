@@ -1,3 +1,4 @@
+Summary: Generic Console Tools
 Description: Generic Console Tools
 Name: generic-console-tools
 Packages:
@@ -26,4 +27,4 @@ Packages:
 - ca-certificates-mozilla
 - iptables
 - tree
-Summary: Generic Console Tools
+- intel-gpu-tools

@@ -1,3 +1,4 @@
+Summary: Generic Development
 Description: Generic Development
 Name: generic-development
 Packages:
@@ -46,4 +47,3 @@ Packages:
 - iputils
 - iproute2
 - which
-Summary: Generic Development

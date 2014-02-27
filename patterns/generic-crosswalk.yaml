@@ -1,0 +1,6 @@
+Summary: Generic Crosswalk
+Description: Generic Crosswalk
+Name: generic-crosswalk
+Packages:
+- crosswalk
+

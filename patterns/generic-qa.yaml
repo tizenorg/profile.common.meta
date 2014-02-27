@@ -1,3 +1,4 @@
+Summary: Generic QA Tools
 Description: Generic QA Tools
 Name: generic-qa
 Packages:
@@ -12,4 +13,3 @@ Packages:
 - ofono-test
 - python-xml
 - wget
-Summary: Generic QA Tools

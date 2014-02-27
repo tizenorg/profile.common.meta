@@ -1,0 +1,24 @@
+############### generic-crosswalk.post ################
+
+# patch install path of crosswalk
+if [ -d /usr/lib64/xwalk ]; then
+	ln -s ../lib64/xwalk /usr/lib
+fi
+
+if [ -f /usr/bin/weston ]; then
+
+	cat >>/etc/xdg/weston/weston.ini <<EOF
+
+## crosswalk applications ##
+
+[launcher]
+icon=/usr/share/icons/tizen/32x32/web-browser.png
+path=/usr/lib64/xwalk/xwalk http://www.tizen.org
+EOF
+
+[launcher]
+icon=/usr/share/icons/tizen/32x32/web-browser.png
+path=/usr/lib64/xwalk/xwalk http://www.google.com
+EOF
+
+fi

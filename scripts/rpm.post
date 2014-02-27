@@ -1,4 +1,0 @@
-##################### rpm.post #######################
-
-rm -f /var/lib/rpm/__db*
-rpmdb --rebuilddb

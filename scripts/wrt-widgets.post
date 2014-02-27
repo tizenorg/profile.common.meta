@@ -1,7 +1,0 @@
-######### wrt-widgets.post #############
-
-# start wrt widgets preinstall
-prepare_widgets.sh
-install_widgets.sh
-
-

@@ -1,3 +1,4 @@
+Summary: Generic Bluetooth
 Description: Generic Bluetooth
 Name: generic-bluetooth
 Packages:
@@ -5,4 +6,3 @@ Packages:
 - bluetooth-frwk
 - bluetooth-share
 - bluetooth-tools-no-firmware
-Summary: Generic Bluetooth

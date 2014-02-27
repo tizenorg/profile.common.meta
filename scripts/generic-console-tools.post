@@ -1,12 +1,8 @@
-##################### customize.post ####################
+##################### generic-console-tools.post ####################
 
 # customize bash prompt
 cat >/etc/profile.d/bash_prompt_custom.sh <<'EOF'
 if [ "$PS1" ]; then
-
-	function parse_git_branch {
-		[ -x "/usr/bin/git" ] && git branch --no-color 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-	}
 
 	function proml {
 		# set a fancy prompt (overwrite the one in /etc/profile)
@@ -23,7 +19,7 @@ if [ "$PS1" ]; then
 			_p="#"
 		fi
 
-		PS1="${usercol}\u${default}@${hostcol}\h${default}:${pathcol}\w${default}${gitcol}\$(parse_git_branch)${default}${_p} ${termcmd}"
+		PS1="${usercol}\u${default}@${hostcol}\h${default}:${pathcol}\w${default}${gitcol}${default}${_p} ${termcmd}"
 	}
 
 	proml
@@ -35,10 +31,6 @@ if [ "$PS1" ]; then
 	alias ll="ls -lZ"
 	alias lr="ls -ltrZ"
 	alias la="ls -alZ"
-
-	function dbus_find () {
-		echo export	$(tr '\0' '\n' </proc/$(pgrep gnome-session)/environ |grep ^DB)
-	}
 
 	function get_manifest () {
 		rpm -qa --queryformat="%{name} %{Version} %{Release} %{VCS}\n" | sort

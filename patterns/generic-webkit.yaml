@@ -1,5 +1,6 @@
+Summary: Generic Webkit
 Description: Generic Webkit
-Name: webkit
+Name: generic-webkit
 Packages:
 - wrt-widgets
 - wrt
@@ -14,4 +15,3 @@ Packages:
 - web-ui-fw-theme-default
 - web-ui-fw-theme-tizen-black
 - web-ui-fw-theme-tizen-white
-Summary: Base System

@@ -1,5 +1,6 @@
-Description: Generic Base Micro System
-Name: generic-base-micro-system
+Summary: Generic Base Micro
+Description: Generic Base Micro
+Name: generic-base-micro
 Packages:
 - bluez
 - kmod
@@ -14,4 +15,3 @@ Packages:
 - glibc-locale
 - pciutils
 - lrzsz
-Summary: Generic Base Micro System

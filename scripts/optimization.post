@@ -1,4 +1,0 @@
-######################## optimization.post #######################
-
-# Run prelink to speed up dynamic binary/library loading
-/usr/sbin/prelink --all

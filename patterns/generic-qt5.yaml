@@ -1,0 +1,5 @@
+Summary: Generic QT5
+Description: Generic QT5
+Name: generic-qt5
+Packages:
+- qt5-tools

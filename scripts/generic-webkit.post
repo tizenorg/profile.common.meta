@@ -1,0 +1,59 @@
+######### generic-webkit.post #############
+
+################ WAYLAND MODE #####################################
+# Add over-riding environment to enable the web runtime to
+# run as a different user than the tizen user
+# Some notes on some of the variables:
+#  - ELM_THEME is needed in order for the wrt to have visible content
+#  - WRT_PROCESS_POOL_DISABLE is a work around for TIVI-2062
+if [ -x /usr/bin/weston ]; then
+	cat > /etc/sysconfig/wrt <<EOF
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/5000/dbus/user_bus_socket
+XDG_RUNTIME_DIR=/run/user/5000
+ELM_ENGINE=wayland_egl
+ECORE_EVAS_ENGINE=wayland_egl
+ELM_THEME=tizen-HD-light
+WRT_PROCESS_POOL_DISABLE=1
+EOF
+
+	# Use the same over-rides for the native prelaunch daemon
+	cp /etc/sysconfig/wrt /etc/sysconfig/launchpad
+fi
+
+# Initialize the native application database
+pkg_initdb
+
+# start wrt widgets preinstall
+prepare_widgets.sh
+install_widgets.sh
+
+# Needed to fix TIVI-1629
+if [ -x /usr/bin/vconftool ]; then
+	vconftool set -t int -f db/setting/default_memory/wap 0
+fi
+
+if [ -f /usr/bin/weston ]; then
+
+	cat >>/etc/xdg/weston/weston.ini <<EOF
+
+## crosswalk applications ##
+
+[launcher]
+icon=/usr/share/icons/tizen/32x32/annex.png
+path=/usr/bin/wrt-launcher -s 33CFo0eFJe.annex
+
+[launcher]
+icon=/usr/share/icons/tizen/32x32/bubblewrap.png
+path=/usr/bin/wrt-launcher -s ewqPdCunAO.bubblewrap
+
+[launcher]
+icon=/usr/share/icons/tizen/32x32/go.png
+path=/usr/bin/wrt-launcher -s SM31mV8fq9.go
+
+[launcher]
+icon=/usr/share/icons/tizen/32x32/mancala.png
+path=/usr/bin/wrt-launcher -s yKrWwxz1KX.mancala
+
+EOF
+
+fi

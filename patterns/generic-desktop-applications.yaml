@@ -1,8 +1,8 @@
+Summary: Generic Desktop Applications
 Description: Generic Desktop Applications
 Name: generic-desktop-applications
 Packages:
 - emotion
-- econnman
-- bluetooth-agent
+#- econnman
+#- bluetooth-agent
 - net-config
-Summary: Generic Desktop Applications

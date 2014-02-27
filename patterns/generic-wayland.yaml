@@ -1,3 +1,4 @@
+Summary: Generic Wayland
 Description: Generic Wayland
 Name: generic-wayland
 Packages:
@@ -9,4 +10,3 @@ Packages:
 - tizen-branding-default
 - user-session-units
 - desktop-skin
-Summary: Generic Wayland

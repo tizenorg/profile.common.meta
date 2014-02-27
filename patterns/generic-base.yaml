@@ -1,5 +1,6 @@
-Description: Generic Base System
-Name: generic-base-system
+Summary: Generic Base
+Description: Generic Base
+Name: generic-base
 Packages:
 - e2fsprogs
 - connman
@@ -29,4 +30,3 @@ Packages:
 - default-ac-domains
 - wpa_supplicant
 - prelink
-Summary: Generic Base System
