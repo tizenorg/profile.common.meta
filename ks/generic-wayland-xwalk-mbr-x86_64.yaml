@@ -1,6 +1,5 @@
 Name: Generic Wayland XWalk MBR x86_64
 Architecture: x86_64
-Schedule: "*"
 Active: True
 Platform: Wayland
 Part: generic-mbr

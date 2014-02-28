@@ -1,4 +1,5 @@
 Name: Generic Wayland MBR i586
+Architecture: i586
 Schedule: "*"
 Active: True
 Platform: Wayland

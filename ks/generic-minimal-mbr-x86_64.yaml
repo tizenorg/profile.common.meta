@@ -1,6 +1,5 @@
 Name: Generic Minimal MBR x86_64
 Architecture: x86_64
-Schedule: "*"
 Active: True
 Platform: Minimal
 Part: generic-mbr

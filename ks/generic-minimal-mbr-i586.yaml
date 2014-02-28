@@ -1,5 +1,5 @@
 Name: Generic Minimal MBR i586
-Schedule: "*"
+Architecture: i586
 Active: True
 Platform: Minimal
 Part: generic-mbr

@@ -1,5 +1,5 @@
 Name: Generic Wayland XWalk MBR i586
-Schedule: "*"
+Architecture: i586
 Active: True
 Platform: Wayland
 Part: generic-mbr
