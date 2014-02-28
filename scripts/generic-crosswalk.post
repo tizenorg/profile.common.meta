@@ -14,7 +14,6 @@ if [ -f /usr/bin/weston ]; then
 [launcher]
 icon=/usr/share/icons/tizen/32x32/web-browser.png
 path=/usr/lib64/xwalk/xwalk http://www.tizen.org
-EOF
 
 [launcher]
 icon=/usr/share/icons/tizen/32x32/web-browser.png
