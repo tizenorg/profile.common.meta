@@ -1,5 +1,5 @@
 Name: Generic Wayland XWalk MBR i586
-Architecture: i586
+Architecture: ia32
 Active: True
 Platform: Wayland
 Part: generic-mbr

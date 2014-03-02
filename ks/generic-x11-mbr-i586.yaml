@@ -1,5 +1,5 @@
 Name: Generic X11 MBR i586
-Architecture: i586
+Architecture: ia32
 Schedule: "*"
 Active: True
 Platform: X11
