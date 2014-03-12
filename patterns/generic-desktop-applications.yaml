@@ -6,3 +6,4 @@ Packages:
 #- econnman
 #- bluetooth-agent
 - net-config
+- org.tizen.calculator

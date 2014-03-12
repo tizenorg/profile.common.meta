@@ -1,2 +1,16 @@
 ############### generic-desktop-applications.post ################
 
+if [ -f /usr/bin/weston ]; then
+
+	cat >>/etc/xdg/weston/weston.ini <<EOF
+
+## desktop applications ##
+
+[launcher]
+icon=/usr/share/icons/tizen/32x32/calculator.png
+path=/usr/apps/org.tizen.calculator/bin/calculator
+
+EOF
+
+fi
+
