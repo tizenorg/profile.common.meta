@@ -55,4 +55,16 @@ if [ -e /etc/sysconfig/i18n -a ! -e /etc/locale.conf ]; then
 	[ -n "$LC_IDENTIFICATION" ] && echo LC_IDENTIFICATION=$LC_IDENTIFICATION >> /etc/locale.conf
 fi
 
-
+# workaround for bug PTREL-763
+patch -p1 -d/ <<'EOF'
+diff -urN bad/etc/pam.d/systemd-user good/etc/pam.d/systemd-user
+--- bad/etc/pam.d/systemd-user 2014-03-20 10:01:36.657843073 +0100
++++ good/etc/pam.d/systemd-user 2014-03-20 10:06:51.586121696 +0100
+@@ -4,5 +4,6 @@
+ 
+ account include system-auth
+ session include system-auth
++session required pam_systemd.so
+ auth required pam_deny.so
+ password required pam_deny.so
+EOF
