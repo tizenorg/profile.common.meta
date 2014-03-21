@@ -45,6 +45,7 @@ Wayland:
         - Generic Bluetooth
         - Generic Multimedia
         - Generic Desktop Applications
+        - Generic Crosswalk
     PostScripts:
         - generic-wayland
         - generic-adaptation
@@ -53,6 +54,7 @@ Wayland:
         - generic-bluetooth
         - generic-multimedia
         - generic-desktop-applications
+        - generic-crosswalk
 
 X11:
     Part: generic-mbr
