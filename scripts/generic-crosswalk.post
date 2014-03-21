@@ -12,22 +12,22 @@ cat <<EOF >/lib/systemd/user/xwalk_widgets_preinstall.service
 [Unit]
 Description=Installation of pre-installed widgets
 After=dbus.service
-ConditionPathExists=!/home/app/.config/xwalk-service/applications.db
+ConditionPathExists=!%h/.config/xwalk-service/applications.db
 
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/install_widgets.sh
 
 [Install]
-WantedBy=weston.target
+WantedBy=default.target
 EOF
 
-mkdir -p /lib/systemd/user/xwalk.target.wants
-ln -sf ../xwalk_widgets_preinstall.service /lib/systemd/user/weston.target.wants/xwalk_widgets_preinstall.service
-
+# run xwalk and xwalk_widgets_preinstall services in default target
+mkdir -p /lib/systemd/user/default.target.wants
+ln -sf ../xwalk_widgets_preinstall.service /lib/systemd/user/default.target.wants/
+ln -sf ../xwalk.service /lib/systemd/user/default.target.wants/
 
 # add launchers to weston.ini
-
 if [ -f /usr/bin/weston ]; then
 
 	cat >>/etc/xdg/weston/weston.ini <<EOF

@@ -1,8 +1,11 @@
 ################ generic-base.post ##################
 
-# was base-general-minimal.post - not used actually
-#rm /usr/lib/systemd/system/default.target
-#ln -sf multi-user.target  /usr/lib/systemd/system/default.target
+# setup systemd default target for user session
+cat <<'EOF' >>/lib/systemd/user/default.target
+[Unit]
+Description=User session default target
+EOF
+mkdir -p /lib/systemd/user/default.target.wants
 
 # Run prelink to speed up dynamic binary/library loading
 /usr/sbin/prelink --all
@@ -68,3 +71,16 @@ diff -urN bad/etc/pam.d/systemd-user good/etc/pam.d/systemd-user
  auth required pam_deny.so
  password required pam_deny.so
 EOF
+
+######### multiuser mode: create additional users
+tizen_crypted_pass=$(perl -e 'print crypt("tizen", "aa")')
+uid=5001
+
+for user in alice bob carol; do
+	useradd -u $uid -d /home/$user -g users -G audio,video,users,display -m --password "$tizen_crypted_pass" $user
+	chsmack -a User /home/$user
+	uid=$(( $uid + 1 ))
+done
+# fix guest homedir
+chsmack -a User /home/guest
+

@@ -1,14 +1,13 @@
 Default:
     Baseline: tizen-3.0
     Active: True
-    Architecture: ia32
     Mic2Options: -f raw --fstab=uuid --copy-kernel --compress-disk-image=bz2 --generate-bmap
     Part: generic-mbr
     Language: en_US.UTF-8
     Keyboard: us
     Timezone: America/Los_Angeles
     RootPass: tizen
-    DefaultUser: tizen
+    DefaultUser: guest
     DefaultUserPass: tizen
     BootLoader: True
     BootloaderAppend: "rw vga=current splash rootwait rootfstype=ext4 plymouth.enable=0"
@@ -36,7 +35,7 @@ Minimal:
 
 Wayland:
     Part: generic-mbr
-    UserGroups: "audio,video,weston-launch"
+    UserGroups: "audio,video"
     Groups:
         - Generic Wayland
         - Generic Adaptation

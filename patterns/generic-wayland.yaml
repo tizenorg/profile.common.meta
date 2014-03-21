@@ -5,7 +5,10 @@ Packages:
 - cantarell-fonts
 - dejavu-fonts
 - weston
+- weston-generic
 - weston-generic-config
+- weston-clients
+- weston-generic-tz-launcher
 - mesa
 - xkeyboard-config
 - tizen-branding-default

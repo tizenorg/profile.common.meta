@@ -1,0 +1,3 @@
+# suppress warnings about shebangs not present in scripts
+
+addFilter("script-without-shebang")
