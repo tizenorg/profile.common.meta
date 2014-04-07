@@ -8,7 +8,6 @@ Packages:
 - efl-theme-tizen-hd
 - evolution-data-server
 - libprivilege-control-conf
-- media-data-sdk
 - model-config-generic
 - neard
 - neardal
