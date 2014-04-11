@@ -91,9 +91,14 @@ uid=5001
 
 for user in alice bob carol; do
 	useradd -u $uid -d /home/$user -g users -G audio,video,users,display -m --password "$tizen_crypted_pass" $user
-	chsmack -a User /home/$user
 	uid=$(( $uid + 1 ))
 done
-# fix guest homedir
-chsmack -a User /home/guest
+
+# create appfw dirs inside homes
+for user in alice bob carol app guest; do
+	for appdir in desktop manifest dbspace; do
+		mkdir -p /home/$user/.applications/$appdir
+	done
+	find /home/$user/ -type d -exec chsmack -a User {} \;
+done
 
