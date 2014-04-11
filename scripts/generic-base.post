@@ -102,3 +102,6 @@ for user in alice bob carol app guest; do
 	find /home/$user/ -type d -exec chsmack -a User {} \;
 done
 
+# adjust app group: main group 'users', extra group 'app'
+usermod -g users app
+usermod -G app app
