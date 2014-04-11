@@ -30,8 +30,8 @@ patch -p1 -d/ <<'EOF'
 +Requires=systemd-logind.service display-manager.service
  
  [Service]
-+ExecStartPre=/usr/bin/sleep 2
- ExecStart=/usr/bin/user-session-launch %i
+-ExecStart=/usr/bin/user-session-launch %i
++ExecStart=/usr/bin/wl-pre "/usr/bin/user-session-launch %i"
  
  [Install]
 EOF
