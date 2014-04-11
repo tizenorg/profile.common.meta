@@ -17,6 +17,20 @@ for user in app alice bob carol guest; do
 	ln -s ../user-session-launch@.service $unitdir/graphical.target.wants/user-session-launch@seat0-$uid.service
 done
 
+# user sessions must start after graphical target
+patch -p1 -d/ <<'EOF'
+--- bad/lib/systemd/system/user-session-launch@.service	2014-04-11 03:51:54.651484824 -0700
++++ good/lib/systemd/system/user-session-launch@.service	2014-04-11 03:44:28.016532732 -0700
+@@ -1,6 +1,6 @@
+ [Unit]
+ Description=User Session Launcher
+-After=systemd-user-sessions.service systemd-logind.service
++After=systemd-user-sessions.service systemd-logind.service display-manager.service
+ Requires=systemd-logind.service
+ 
+ [Service]
+EOF
+
 # clean weston target inside user session (installed by weston)
 rm -f /usr/lib/systemd/user/weston.target
 
