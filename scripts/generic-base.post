@@ -100,7 +100,7 @@ for user in alice bob carol app guest; do
 		mkdir -p /home/$user/.applications/$appdir
 	done
 	find /home/$user/ -type d -exec chsmack -a User {} \;
-	chown -R $user:users /home/$user
+	chown -R $user:users /home/$user/
 done
 
 # adjust app group: main group 'users', extra group 'app'
