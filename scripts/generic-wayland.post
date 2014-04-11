@@ -18,23 +18,20 @@ for user in app alice bob carol guest; do
 done
 
 # user sessions must start after graphical target
-patch -p1 -d/ <<'EOF'
---- bad/lib/systemd/system/user-session-launch@.service	2014-04-11 03:51:54.651484824 -0700
-+++ good/lib/systemd/system/user-session-launch@.service	2014-04-11 03:44:28.016532732 -0700
-@@ -1,10 +1,10 @@
- [Unit]
- Description=User Session Launcher
--After=systemd-user-sessions.service systemd-logind.service
--Requires=systemd-logind.service
-+After=systemd-user-sessions.service systemd-logind.service display-manager.service
-+Requires=systemd-logind.service display-manager.service
- 
- [Service]
--ExecStart=/usr/bin/user-session-launch %i
-+ExecStart=/usr/bin/wl-pre "/usr/bin/user-session-launch %i"
- 
- [Install]
- WantedBy=graphical.target 
+cat >/usr/lib/systemd/system/user-session-launch@.service << EOF
+[Unit]
+Description=User Session Launcher
+After=systemd-user-sessions.service systemd-logind.service display-manager.service
+Requires=systemd-logind.service display-manager.service
+
+[Service]
+ExecStartPre=/usr/bin/sleep 3
+ExecStart=/usr/bin/user-session-launch %i
+#ExecStart=/usr/bin/wl-pre "/usr/bin/user-session-launch %i"
+#Environment=XDG_RUNTIME_DIR=/run/display
+
+[Install]
+WantedBy=graphical.target
 EOF
 
 # clean weston target inside user session (installed by weston)
