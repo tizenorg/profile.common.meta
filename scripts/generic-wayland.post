@@ -21,7 +21,7 @@ done
 patch -p1 -d/ <<'EOF'
 --- bad/lib/systemd/system/user-session-launch@.service	2014-04-11 03:51:54.651484824 -0700
 +++ good/lib/systemd/system/user-session-launch@.service	2014-04-11 03:44:28.016532732 -0700
-@@ -1,9 +1,10 @@
+@@ -1,10 +1,10 @@
  [Unit]
  Description=User Session Launcher
 -After=systemd-user-sessions.service systemd-logind.service
@@ -34,6 +34,7 @@ patch -p1 -d/ <<'EOF'
 +ExecStart=/usr/bin/wl-pre "/usr/bin/user-session-launch %i"
  
  [Install]
+ WantedBy=graphical.target 
 EOF
 
 # clean weston target inside user session (installed by weston)
