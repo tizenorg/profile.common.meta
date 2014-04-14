@@ -29,3 +29,6 @@ EOF
 
 # public key is authorized to login (automatically)
 cat /root/.ssh/id_eat_dsa.pub >>/root/.ssh/authorized_keys
+
+# adjust permissions on ssh config files
+chmod 600 /root/.ssh/*
