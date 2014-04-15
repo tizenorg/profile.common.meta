@@ -18,11 +18,12 @@ for user in app alice bob carol guest; do
 done
 
 # user sessions must start after graphical target
+# WARNING: this overwrites the file distributed in RPM user-session-units
 cat >/usr/lib/systemd/system/user-session-launch@.service << EOF
 [Unit]
 Description=User Session Launcher
-After=systemd-user-sessions.service systemd-logind.service display-manager.service
-Requires=systemd-logind.service display-manager.service
+After=systemd-user-sessions.service systemd-logind.service display-manager.path
+Requires=systemd-logind.service display-manager.path
 
 [Service]
 ExecStartPre=/usr/bin/sleep 3
