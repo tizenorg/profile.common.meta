@@ -59,7 +59,7 @@ if [ -e /etc/sysconfig/i18n -a ! -e /etc/locale.conf ]; then
 fi
 
 # workaround for bug PTREL-763
-patch -p1 -d/ <<'EOF'
+patch -b -p1 -d/ <<'EOF'
 --- bad/etc/pam.d/systemd-user 2014-03-20 10:01:36.657843073 +0100
 +++ good/etc/pam.d/systemd-user 2014-03-20 10:06:51.586121696 +0100
 @@ -4,5 +4,6 @@
@@ -72,7 +72,7 @@ patch -p1 -d/ <<'EOF'
 EOF
 
 # extra fix to avoid root and display sessions
-patch -p1 -d/ <<'EOF'
+patch -b -p1 -d/ <<'EOF'
 --- bad/etc/pam.d/system-auth	2014-04-07 06:16:51.888018876 -0700
 +++ good/etc/pam.d/system-auth	2014-04-07 06:16:46.335018503 -0700
 @@ -11,7 +11,6 @@

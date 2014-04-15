@@ -18,21 +18,19 @@ for user in app alice bob carol guest; do
 done
 
 # user sessions must start after graphical target
-# WARNING: this overwrites the file distributed in RPM user-session-units
-cat >/usr/lib/systemd/system/user-session-launch@.service << EOF
-[Unit]
-Description=User Session Launcher
-After=systemd-user-sessions.service systemd-logind.service display-manager.path
-Requires=systemd-logind.service display-manager.path
-
-[Service]
-ExecStartPre=/usr/bin/sleep 3
-ExecStart=/usr/bin/user-session-launch %i
-#ExecStart=/usr/bin/wl-pre "/usr/bin/user-session-launch %i"
-#Environment=XDG_RUNTIME_DIR=/run/display
-
-[Install]
-WantedBy=graphical.target
+patch -b -p1 -d/ <<'EOF'
+--- /lib/systemd/system/user-session-launch@.service.orig	2014-03-17 17:50:18.000000000 -0700
++++ /lib/systemd/system/user-session-launch@.service	2014-04-15 06:03:45.555682575 -0700
+@@ -1,7 +1,7 @@
+ [Unit]
+ Description=User Session Launcher
+-After=systemd-user-sessions.service systemd-logind.service
+-Requires=systemd-logind.service
++After=systemd-user-sessions.service systemd-logind.service display-manager.path
++Requires=systemd-logind.service display-manager.path
+ 
+ [Service]
+ ExecStart=/usr/bin/user-session-launch %i
 EOF
 
 # clean weston target inside user session (installed by weston)
