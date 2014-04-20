@@ -1,0 +1,7 @@
+Summary: Common Applications
+Description: Common Applications
+Name: common-applications
+Packages:
+- ail
+- ca-certificates
+- ca-certificates-mozilla

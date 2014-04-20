@@ -1,0 +1,14 @@
+Name: Common QA Unsafe X11 MBR i586
+Architecture: ia32
+Schedule: "*"
+Active: True
+Platform: X11
+Part: common-mbr
+FileName: common-qa-unsafe-x11-mbr-i586
+Kernel: kernel-x86-common
+Repos:
+    - common-x11_i586
+Groups:
+    - Common Automated QA Tools
+PostScripts:
+    - common-autoqa

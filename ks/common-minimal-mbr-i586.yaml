@@ -1,0 +1,9 @@
+Name: Common Minimal MBR i586
+Architecture: ia32
+Active: True
+Platform: Minimal
+Part: common-mbr
+FileName: common-minimal-mbr-i586
+Kernel: kernel-x86-common
+Repos:
+    - common-wayland_i586

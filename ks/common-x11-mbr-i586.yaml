@@ -1,0 +1,10 @@
+Name: Common X11 MBR i586
+Architecture: ia32
+Schedule: "*"
+Active: True
+Platform: X11
+Part: common-mbr
+FileName: common-x11-mbr-i586
+Kernel: kernel-x86-common
+Repos:
+    - common-x11_i586

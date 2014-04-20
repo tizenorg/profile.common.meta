@@ -1,0 +1,78 @@
+Default:
+    Baseline: tizen-3.0
+    Active: True
+    Mic2Options: -f raw --fstab=uuid --copy-kernel --compress-disk-image=bz2 --generate-bmap
+    Part: common-mbr
+    Language: en_US.UTF-8
+    Keyboard: us
+    Timezone: America/Los_Angeles
+    RootPass: tizen
+    DefaultUser: guest
+    DefaultUserPass: tizen
+    BootLoader: True
+    BootloaderAppend: "rw vga=current splash rootwait rootfstype=ext4 plymouth.enable=0"
+    BootloaderTimeout: 3
+    BootloaderOptions: '--ptable=gpt --menus="install:Wipe and Install:systemd.unit=system-installer.service:test"'
+    StartX: False
+    Desktop: None
+    Repos:
+        - Common
+    SaveRepos: False
+    UserGroups: "audio,video"
+    Groups:
+        - Common Base
+        - Common Console Tools
+        - Common Packaging
+    PostScripts:
+        - common-base
+        - common-console-tools
+        - common-packaging
+    NoChrootScripts:
+        - buildname
+
+Minimal:
+    Part: common-mbr
+
+Wayland:
+    Part: common-mbr
+    UserGroups: "audio,video"
+    Groups:
+        - Common Wayland
+        - Common Adaptation
+        - Common Middleware
+        - Common Applications
+        - Common Bluetooth
+        - Common Multimedia
+        - Common Desktop Applications
+        - Common Crosswalk
+    PostScripts:
+        - common-wayland
+        - common-adaptation
+        - common-middleware
+        - common-applications
+        - common-bluetooth
+        - common-multimedia
+        - common-desktop-applications
+        - common-crosswalk
+
+X11:
+    Part: common-mbr
+    Groups:
+        - Common X11
+        - Common Adaptation
+        - Common Middleware
+        - Common Applications
+        - Common Bluetooth
+        - Common Multimedia
+        - Common Webkit
+        - Common Desktop Applications
+    PostScripts:
+        - common-x11
+        - common-adaptation
+        - common-middleware
+        - common-applications
+        - common-bluetooth
+        - common-multimedia
+        - common-webkit
+        - common-desktop-applications
+

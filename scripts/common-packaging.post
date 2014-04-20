@@ -1,0 +1,34 @@
+############### common-packaging.post ################
+
+rm -rf /root/.zypp
+
+# was: rpm.post
+rm -f /var/lib/rpm/__db*
+rpmdb --rebuilddb
+
+# generate repo files for zypper
+function genrepo() {
+	local reponame=$1
+	local url=$2
+
+cat >> /etc/zypp/repos.d/${reponame}.repo << EOF
+[${reponame}]
+name=${reponame}
+enabled=1
+autorefresh=0
+baseurl=
+baseurl=${url}?ssl_verify=no
+type=rpm-md
+gpgcheck=0
+EOF
+}
+
+arch=ia32
+[ -d /usr/lib64 ] && arch=x86_64
+
+if [ -x /usr/bin/weston ]; then
+	genrepo common-wayland-${arch} http://download.tizen.org/snapshots/tizen/common/common-wayland-${arch}/latest/repos/common/${arch}/packages/
+else
+	genrepo common-x11-${arch} http://download.tizen.org/snapshots/tizen/common/common-x11-${arch}/latest/repos/common/${arch}/packages/
+fi
+

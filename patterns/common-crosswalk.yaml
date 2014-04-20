@@ -1,0 +1,8 @@
+Summary: Common Crosswalk
+Description: Common Crosswalk
+Name: common-crosswalk
+Packages:
+- crosswalk
+- tizen-extensions-crosswalk
+- wrt-widgets
+

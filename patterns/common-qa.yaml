@@ -1,0 +1,15 @@
+Summary: Common QA Tools
+Description: Common QA Tools
+Name: common-qa
+Packages:
+- bluez-test
+- connman-test
+- dbus-python
+- dlogutil
+- eet-tools
+- gdb
+- gstreamer-utils
+- neard-test
+- ofono-test
+- python-xml
+- wget

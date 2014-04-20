@@ -1,0 +1,9 @@
+Name: Common Minimal MBR x86_64
+Architecture: x86_64
+Active: True
+Platform: Minimal
+Part: common-mbr
+FileName: common-minimal-mbr-x86_64
+Kernel: kernel-x86-common
+Repos:
+    - common-wayland_x86_64

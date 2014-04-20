@@ -1,9 +1,0 @@
-Summary: Generic Desktop Applications
-Description: Generic Desktop Applications
-Name: generic-desktop-applications
-Packages:
-- emotion
-#- econnman
-#- bluetooth-agent
-- net-config
-- org.tizen.calculator

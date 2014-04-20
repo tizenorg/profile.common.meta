@@ -1,0 +1,14 @@
+Name: Common QA Unsafe Wayland MBR x86_64
+Architecture: x86_64
+Schedule: "*"
+Active: True
+Platform: Wayland
+Part: common-mbr
+FileName: common-qa-unsafe-wayland-mbr-x86_64
+Kernel: kernel-x86-common
+Repos:
+    - common-wayland_x86_64
+Groups:
+    - Common Automated QA Tools
+PostScripts:
+    - common-autoqa

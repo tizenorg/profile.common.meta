@@ -1,0 +1,16 @@
+Summary: Common Wayland
+Description: Common Wayland
+Name: common-wayland
+Packages:
+- cantarell-fonts
+- dejavu-fonts
+- weston
+- weston-common
+- weston-common-config
+- weston-clients
+- weston-common-tz-launcher
+- mesa
+- xkeyboard-config
+- tizen-branding-default
+- user-session-units
+- desktop-skin

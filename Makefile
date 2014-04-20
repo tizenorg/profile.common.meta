@@ -1,6 +1,6 @@
 # ex: set tabstop=4 noexpandtab: 
 VERSION = $(shell cat VERSION)
-NAME=meta-generic
+NAME=meta-common
 TAGVER = $(shell cat VERSION | sed -e "s/\([0-9\.]*\).*/\1/")
 DESTDIR=
 ARCH=i586
@@ -14,19 +14,19 @@ endif
 all:
 
 install:
-	install -d ${DESTDIR}/usr/share/package-groups/generic
-	install -d ${DESTDIR}/usr/share/image-configurations/generic/configs
-	install -d ${DESTDIR}/usr/share/image-configurations/generic/scripts
-	install -d ${DESTDIR}/usr/share/image-configurations/generic/partitions
-	install -m 644 patterns/*.yaml ${DESTDIR}/usr/share/package-groups/generic
-	install -m 644 generic.yaml ${DESTDIR}/usr/share/image-configurations/generic
-	install -m 644 generic-repos.yaml ${DESTDIR}/usr/share/image-configurations/generic
-	install -m 644 ks/*.yaml ${DESTDIR}/usr/share/image-configurations/generic/configs
-	install -D partitions/* ${DESTDIR}/usr/share/image-configurations/generic/partitions
-	install -D scripts/* ${DESTDIR}/usr/share/image-configurations/generic/scripts
+	install -d ${DESTDIR}/usr/share/package-groups/common
+	install -d ${DESTDIR}/usr/share/image-configurations/common/configs
+	install -d ${DESTDIR}/usr/share/image-configurations/common/scripts
+	install -d ${DESTDIR}/usr/share/image-configurations/common/partitions
+	install -m 644 patterns/*.yaml ${DESTDIR}/usr/share/package-groups/common
+	install -m 644 common.yaml ${DESTDIR}/usr/share/image-configurations/common
+	install -m 644 common-repos.yaml ${DESTDIR}/usr/share/image-configurations/common
+	install -m 644 ks/*.yaml ${DESTDIR}/usr/share/image-configurations/common/configs
+	install -D partitions/* ${DESTDIR}/usr/share/image-configurations/common/partitions
+	install -D scripts/* ${DESTDIR}/usr/share/image-configurations/common/scripts
 
 test:
-	kickstarter -c generic.yaml -r generic-repos.yaml  -e ks/
+	kickstarter -c common.yaml -r common-repos.yaml  -e ks/
 tag:
 	git tag -a $(VERSION) -m "$(VERSION)"
 	git push --tags
