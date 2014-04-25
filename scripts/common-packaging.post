@@ -26,9 +26,5 @@ EOF
 arch=ia32
 [ -d /usr/lib64 ] && arch=x86_64
 
-if [ -x /usr/bin/weston ]; then
-	genrepo common-wayland-${arch} http://download.tizen.org/snapshots/tizen/common/common-wayland-${arch}/latest/repos/common/${arch}/packages/
-else
-	genrepo common-x11-${arch} http://download.tizen.org/snapshots/tizen/common/common-x11-${arch}/latest/repos/common/${arch}/packages/
-fi
+genrepo common-wayland-${arch} http://download.tizen.org/snapshots/tizen/common/common-wayland-${arch}/latest/repos/common/${arch}/packages/
 
