@@ -1,8 +1,5 @@
 #################### common-wayland.post ##################
 
-# Add 'app' user to the display group
-/usr/sbin/groupmod -A app display
-
 # add other users to display group
 for user in alice bob carol guest; do
 	/usr/sbin/groupmod -A $user display
@@ -12,7 +9,7 @@ done
 # graphical sessions)
 unitdir=/usr/lib/systemd/system
 mkdir -p $unitdir/graphical.target.wants
-for user in app alice bob carol guest; do
+for user in alice bob carol guest; do
 	uid=$(getent passwd $user|cut -f3 -d':')
 	ln -s ../user-session-launch@.service $unitdir/graphical.target.wants/user-session-launch@seat0-$uid.service
 done

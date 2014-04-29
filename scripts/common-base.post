@@ -18,14 +18,6 @@ sed -ri "s/(^blacklist i8042.*$)/#fix from base-general.post \1/" /etc/modprobe.
 # sdx: fix smack labels on /var/log
 chsmack -a '*' /var/log
 
-# Temporary work around for bug in filesystem package resulting in the 'app' user home
-# directory being only readable by root
-chown -R app:app /opt/home/app
-
-# Since weston-launch runs with the "User" label, the app
-# home dir must have the same label
-chsmack -a User /opt/home/app
-
 # bug workaround on MIC (DEVT-160)
 if [ -e /etc/sysconfig/i18n -a ! -e /etc/locale.conf ]; then
 	unset LANG
@@ -95,7 +87,7 @@ for user in alice bob carol; do
 done
 
 # create appfw dirs inside homes
-for user in alice bob carol app guest; do
+for user in alice bob carol guest; do
 	for appdir in desktop manifest dbspace; do
 		mkdir -p /home/$user/.applications/$appdir
 	done
@@ -103,6 +95,3 @@ for user in alice bob carol app guest; do
 	chown -R $user:users /home/$user/
 done
 
-# adjust app group: main group 'users', extra group 'app'
-usermod -g users app
-usermod -G app app
