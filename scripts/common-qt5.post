@@ -1,2 +1,18 @@
+#!/bin/sh
 ############### common-qt5.post ################
+l='
+qt5-qtdeclarative-examples
+qt5-cinematic-experience
+'
 
+dst="/usr/share/applications/tizen/launcher.conf"
+
+if [ -w "$dst" ] ; then
+    for app in $list ; do
+        src="/usr/share/applications/$app.desktop"
+
+        grep "$src" "$dst" \
+            || { [ ! -r "$src" ] || echo "$src" >> "$dst" ; }
+
+    done
+fi
