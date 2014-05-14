@@ -3,3 +3,4 @@ Description: Common QT5
 Name: common-qt5
 Packages:
 - qt5-tools
+- qt5-qtdeclarative-examples
