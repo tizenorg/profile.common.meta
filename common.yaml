@@ -45,6 +45,7 @@ Wayland:
         - Common Multimedia
         - Common Desktop Applications
         - Common Crosswalk
+        - Common QT5
     PostScripts:
         - common-wayland
         - common-adaptation
@@ -54,4 +55,5 @@ Wayland:
         - common-multimedia
         - common-desktop-applications
         - common-crosswalk
+        - common-qt5
 
