@@ -3,6 +3,7 @@ Description: Common Bluetooth
 Name: common-bluetooth
 Packages:
 - bluez
-- bluetooth-frwk
+- bluetooth-frwk-core
+- bluetooth-frwk-service
 - bluetooth-share
 - bluetooth-tools-no-firmware
