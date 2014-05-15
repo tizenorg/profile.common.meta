@@ -36,3 +36,17 @@ EOF
 # clean weston target inside user session (installed by weston)
 rm -f /usr/lib/systemd/user/weston.target
 
+
+#{ Add installed apps for tizen to launcher if not present
+dst="/usr/share/applications/tizen/launcher.conf"
+
+if [ -w "$dst" ] ; then
+   ls /usr/share/applications/tizen/*.desktop \
+   | while read src; do
+        grep "$src" "$dst" \
+            || { [ ! -r "$src" ] || echo "$src" >> "$dst" ; }
+
+    done
+fi
+
+#}
