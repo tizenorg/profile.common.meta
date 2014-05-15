@@ -2,5 +2,6 @@ Summary: Common Qt5
 Description: Common Qt5
 Name: common-qt5
 Packages:
+- qt-tizen
 - qt5-tools
 - qt5-qtdeclarative-examples
