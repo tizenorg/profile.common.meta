@@ -2,8 +2,12 @@ Summary: Common Desktop Applications
 Description: Common Desktop Applications
 Name: common-desktop-applications
 Packages:
+- weston-clients
 - emotion
 #- econnman
 #- bluetooth-agent
 - net-config
 - org.tizen.calculator
+- elementary-tools
+- evas-examples
+- emotion-examples
