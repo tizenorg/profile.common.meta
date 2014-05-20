@@ -1,1 +1,1 @@
-part / --fstype="ext4" --ondisk=sda --size=3840 --active --label tizen-common
+part / --fstype="ext4" --ondisk=sda --size=3584 --active --label tizen-common
