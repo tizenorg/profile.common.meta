@@ -7,3 +7,11 @@ Repositories:
         Url:  http://download.tizen.org/snapshots/tizen/common/common-wayland-x86_64/@BUILD_ID@/repos/common/x86_64/packages/
         Options: --ssl_verify=no
 
+    -   Name: common-wayland_i586-jj
+        Url:  http://download.tizen.org/.build/snapshots/tizen/common/@BUILD_ID@/repos/ia32-wayland/packages/
+        Options: --ssl_verify=no
+
+    -   Name: common-wayland_x86_64-jj
+        Url:  http://download.tizen.org/.build/snapshots/tizen/common/@BUILD_ID@/repos/x86_64-wayland/packages/
+        Options: --ssl_verify=no
+

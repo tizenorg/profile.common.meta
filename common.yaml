@@ -15,8 +15,6 @@ Default:
     BootloaderOptions: '--ptable=gpt --menus="install:Wipe and Install:systemd.unit=system-installer.service:test"'
     StartX: False
     Desktop: None
-    Repos:
-        - Common
     SaveRepos: False
     UserGroups: "audio,video"
     Groups:
@@ -32,6 +30,8 @@ Default:
 
 Minimal:
     Part: common-mbr
+    Repos:
+        - Common
 
 Wayland:
     Part: common-mbr
@@ -56,4 +56,31 @@ Wayland:
         - common-desktop-applications
         - common-crosswalk
         - common-qt5
+    Repos:
+        - Common
+
+Wayland-JJ:
+    Part: common-mbr
+    UserGroups: "audio,video"
+    Groups:
+        - Common Wayland
+        - Common Adaptation
+        - Common Middleware
+        - Common Applications
+        - Common Bluetooth
+        - Common Multimedia
+        - Common Desktop Applications
+        - Common Crosswalk
+        - Common Qt5
+    PostScripts:
+        - common-wayland
+        - common-adaptation
+        - common-middleware
+        - common-applications
+        - common-bluetooth
+        - common-multimedia
+        - common-desktop-applications
+        - common-crosswalk
+        - common-qt5
+    Repos: []
 

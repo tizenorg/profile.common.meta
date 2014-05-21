@@ -1,0 +1,14 @@
+Name: Common QA Unsafe Wayland MBR i586
+Architecture: ia32
+Schedule: " "
+Active: False
+Platform: Wayland-JJ
+Part: common-mbr
+FileName: common-qa-unsafe-wayland-mbr-i586-JJ
+Kernel: kernel-x86-common
+Repos:
+    - common-wayland_i586-jj
+Groups:
+    - Common Automated QA Tools
+PostScripts:
+    - common-autoqa
