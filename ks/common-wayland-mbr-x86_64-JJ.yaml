@@ -1,7 +1,7 @@
 Name: Common Wayland MBR x86_64
 Architecture: x86_64
 Schedule: " "
-Active: False
+Active: True
 Platform: Wayland-JJ
 Part: common-mbr
 FileName: common-wayland-mbr-x86_64-JJ
