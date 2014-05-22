@@ -1,7 +1,7 @@
 Name: Common Wayland MBR i586
 Architecture: ia32
 Schedule: " "
-Active: False
+Active: True
 Platform: Wayland-JJ
 Part: common-mbr
 FileName: common-wayland-mbr-i586-JJ
