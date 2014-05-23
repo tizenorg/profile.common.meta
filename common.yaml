@@ -30,8 +30,11 @@ Default:
 
 Minimal:
     Part: common-mbr
-    Repos:
-        - Common
+    Repos: []
+
+Installer:
+    Part: common-mbr
+    Repos: []
 
 Wayland:
     Part: common-mbr
@@ -56,8 +59,7 @@ Wayland:
         - common-desktop-applications
         - common-crosswalk
         - common-qt5
-    Repos:
-        - Common
+    Repos: []
 
 Wayland-JJ:
     Part: common-mbr
