@@ -1,0 +1,14 @@
+Name: Common Emulator QA Unsafe Wayland MBR i586
+Architecture: ia32
+Schedule: "*"
+Active: True
+Platform: Wayland
+Part: common-mbr
+FileName: common-emulator-qa-unsafe-wayland-mbr-i586
+Kernel: kernel-x86-common
+Repos:
+    - common-emulator-wayland_i586
+Groups:
+    - Common Automated QA Tools
+PostScripts:
+    - common-autoqa

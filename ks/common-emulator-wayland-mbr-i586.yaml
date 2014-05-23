@@ -1,0 +1,10 @@
+Name: Common Emulator Wayland MBR i586
+Architecture: ia32
+Schedule: "*"
+Active: True
+Platform: Wayland
+Part: common-mbr
+FileName: common-emulator-wayland-mbr-i586
+Kernel: kernel-x86-common
+Repos:
+    - common-emulator-wayland_i586
