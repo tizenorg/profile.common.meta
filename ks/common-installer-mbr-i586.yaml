@@ -8,3 +8,5 @@ FileName: common-installer-mbr-i586
 Kernel: kernel-x86-common
 Repos:
     - common-wayland_i586
+ExtraPackages:
+    - system-installer
