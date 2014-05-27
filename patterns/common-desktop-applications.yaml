@@ -6,7 +6,6 @@ Packages:
 - emotion
 #- econnman
 #- bluetooth-agent
-- net-config
 - org.tizen.calculator
 - elementary-tools
 - evas-examples
