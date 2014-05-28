@@ -9,7 +9,3 @@ FileName: common-emulator-wayland-mbr-i586
 Kernel: kernel-x86-common
 Repos:
     - common-emulator-wayland_i586
-RemovePackages:
-    - mesa-libGL
-    - libva
-    - gstreamer-vaapi
