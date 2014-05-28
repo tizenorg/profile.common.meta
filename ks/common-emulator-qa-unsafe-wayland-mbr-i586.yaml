@@ -13,7 +13,3 @@ Groups:
     - Common Automated QA Tools
 PostScripts:
     - common-autoqa
-RemovePackages:
-    - mesa-libGL
-    - libva
-    - gstreamer-vaapi
