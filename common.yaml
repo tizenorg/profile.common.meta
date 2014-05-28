@@ -21,10 +21,12 @@ Default:
         - Common Base
         - Common Console Tools
         - Common Packaging
+        - Common Adaptation
     PostScripts:
         - common-base
         - common-console-tools
         - common-packaging
+        - common-adaptation
     NoChrootScripts:
         - buildname
 
@@ -41,7 +43,6 @@ Wayland:
     UserGroups: "audio,video"
     Groups:
         - Common Wayland
-        - Common Adaptation
         - Common Middleware
         - Common Applications
         - Common Bluetooth
@@ -51,7 +52,6 @@ Wayland:
         - Common Qt5
     PostScripts:
         - common-wayland
-        - common-adaptation
         - common-middleware
         - common-applications
         - common-bluetooth
@@ -66,7 +66,6 @@ Wayland-JJ:
     UserGroups: "audio,video"
     Groups:
         - Common Wayland
-        - Common Adaptation
         - Common Middleware
         - Common Applications
         - Common Bluetooth
@@ -76,7 +75,6 @@ Wayland-JJ:
         - Common Qt5
     PostScripts:
         - common-wayland
-        - common-adaptation
         - common-middleware
         - common-applications
         - common-bluetooth
