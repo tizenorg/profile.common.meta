@@ -8,5 +8,6 @@ FileName: common-installer-mbr-i586
 Kernel: kernel-x86-common
 Repos:
     - common-wayland_i586
+BootloaderAppend: "rw vga=current quiet splash rootwait rootfstype=ext4 plymouth.enable=0"
 ExtraPackages:
     - system-installer
