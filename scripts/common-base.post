@@ -7,6 +7,9 @@ Description=User session default target
 EOF
 mkdir -p /lib/systemd/user/default.target.wants
 
+# start dbus session
+ln -s ../dbus.service /lib/systemd/user/default.target.wants/
+
 # Run prelink to speed up dynamic binary/library loading
 /usr/sbin/prelink --all
 
