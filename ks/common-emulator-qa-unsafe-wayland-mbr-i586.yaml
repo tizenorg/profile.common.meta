@@ -9,6 +9,9 @@ FileName: common-emulator-qa-unsafe-wayland-mbr-i586
 Kernel: kernel-x86-common
 Repos:
     - common-emulator-wayland_i586
+ExtraPackages:
+    - sdbd
+    - system-plugin-emulator
 Groups:
     - Common Automated QA Tools
 PostScripts:
