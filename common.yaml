@@ -36,6 +36,7 @@ Minimal:
 
 Installer:
     Part: common-mbr
+    BootloaderAppend: "rw vga=current quiet splash rootwait rootfstype=ext4 plymouth.enable=0"
     Repos: []
 
 Wayland:
