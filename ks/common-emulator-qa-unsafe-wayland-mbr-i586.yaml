@@ -11,5 +11,10 @@ Repos:
     - common-emulator-wayland_i586
 Groups:
     - Common Automated QA Tools
+ExtraPackages:
+    - sdbd
+    - system-plugin-emulator
+RemovePackages:
+    - openssh
 PostScripts:
     - common-autoqa
