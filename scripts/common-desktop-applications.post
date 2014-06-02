@@ -1,5 +1,31 @@
 ############### common-desktop-applications.post ################
 
+# temp workaround to fill each user app_info database with global db infos
+. /etc/tizen-platform.conf
+
+echo "Fixing multiuser app_info dbs"
+chsmack -a "_" $TZ_SYS_DB/.app_info.db*
+chmod 764 $TZ_SYS_DB/.app_info.db*
+
+for user in alice bob carol guest app; do
+	[ ! -d /home/$user ] && continue
+	echo "Fix app_info.db of $user"
+	chown -R $user:users /home/$user/.applications/dbspace/
+
+	if [ -f /home/$user/.applications/dbspace/.app_info.db ]; then
+		sqlite3 /home/$user/.applications/dbspace/.app_info.db <<EOF
+attach database '$TZ_SYS_DB/.app_info.db' as common;
+insert into app_info select * from common.app_info;
+EOF
+	else
+		cp $TZ_SYS_DB/.app_info.db /home/$user/.applications/dbspace/.app_info.db
+	fi
+
+	chown -R $user:users /home/$user/.applications/dbspace/
+	chsmack -a User /home/$user/.applications/dbspace/.app_info.db*
+done
+
+
 if [ -f /usr/bin/weston ]; then
 
 	cat >>/etc/xdg/weston/weston.ini <<EOF
