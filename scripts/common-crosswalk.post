@@ -7,6 +7,10 @@ ail_initdb
 # start wrt widgets preinstall
 prepare_widgets.sh
 
+# make crosswak start in default target
+mkdir -p /lib/systemd/user/default.target.wants/
+ln -s ../xwalk.service /lib/systemd/user/default.target.wants/
+
 # add launchers to weston.ini
 if [ -f /usr/bin/weston ]; then
 
