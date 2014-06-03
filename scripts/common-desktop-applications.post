@@ -2,6 +2,8 @@
 
 # temp workaround to fill each user app_info database with global db infos
 . /etc/tizen-platform.conf
+ail_initdb
+pkg_initdb
 
 echo "Fixing multiuser app_info dbs"
 chsmack -a "_" $TZ_SYS_DB/.app_info.db*

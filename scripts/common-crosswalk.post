@@ -1,8 +1,8 @@
 ############### common-crosswalk.post ################
 
 # Initialize the native application database
-pkg_initdb
-ail_initdb
+#pkg_initdb
+#ail_initdb
 
 # start wrt widgets preinstall
 prepare_widgets.sh
