@@ -9,6 +9,7 @@ Packages:
 - evolution-data-server
 - libprivilege-control-conf
 - model-config-generic
+- notification-service
 - neard
 - neardal
 - obexd
