@@ -26,5 +26,7 @@ EOF
 arch=ia32
 [ -d /usr/lib64 ] && arch=x86_64
 
-genrepo common-wayland-${arch} http://download.tizen.org/snapshots/tizen/common/common-wayland-${arch}/latest/repos/common/${arch}/packages/
+# quick fix for TC-1198
+# will not work for emulator32
+genrepo common-wayland-${arch} http://download.tizen.org/snapshots/tizen/common/@BUILD_ID@/repos/${arch}-wayland/packages/
 
