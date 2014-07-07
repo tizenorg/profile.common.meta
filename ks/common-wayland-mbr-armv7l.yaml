@@ -1,0 +1,11 @@
+Name: Common Wayland MBR armv7l
+Architecture: armv7l
+Schedule: "*"
+Active: True
+Platform: Wayland
+Part: common-mbr
+FileName: common-wayland-mbr-armv7l
+Repos:
+    - common-wayland_armv7l
+Groups:
+    - Common Ref M0
