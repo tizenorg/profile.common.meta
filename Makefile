@@ -21,6 +21,7 @@ install:
 	install -m 644 patterns/*.yaml ${DESTDIR}/usr/share/package-groups/common
 	install -m 644 common.yaml ${DESTDIR}/usr/share/image-configurations/common
 	install -m 644 common-repos.yaml ${DESTDIR}/usr/share/image-configurations/common
+	install -m 644 common-targets.yaml ${DESTDIR}/usr/share/image-configurations/common
 	install -m 644 ks/*.yaml ${DESTDIR}/usr/share/image-configurations/common/configs
 	install -D partitions/* ${DESTDIR}/usr/share/image-configurations/common/partitions
 	install -D scripts/* ${DESTDIR}/usr/share/image-configurations/common/scripts
