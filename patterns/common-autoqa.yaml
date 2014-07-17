@@ -1,7 +1,0 @@
-Summary: Common Automated QA Tools
-Description: Common Automated QA Tools
-Name: common-autoqa
-Packages:
-- testkit-lite
-- screen
-- which

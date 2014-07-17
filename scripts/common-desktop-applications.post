@@ -1,44 +1,9 @@
-############### common-desktop-applications.post ################
+#!/bin/sh
+echo "############### common-desktop-applications.post ################"
 
-# temp workaround to fill each user app_info database with global db infos
-. /etc/tizen-platform.conf
-ail_initdb
-pkg_initdb
-
-echo "Fixing multiuser app_info dbs"
-chsmack -a "_" $TZ_SYS_DB/.app_info.db*
-chmod 764 $TZ_SYS_DB/.app_info.db*
-
-for user in alice bob carol guest app; do
-	[ ! -d /home/$user ] && continue
-	echo "Fix app_info.db of $user"
-	chown -R $user:users /home/$user/.applications/dbspace/
-
-	if [ -f /home/$user/.applications/dbspace/.app_info.db ]; then
-		sqlite3 /home/$user/.applications/dbspace/.app_info.db <<EOF
-attach database '$TZ_SYS_DB/.app_info.db' as common;
-insert into app_info select * from common.app_info;
-EOF
-	else
-		cp $TZ_SYS_DB/.app_info.db /home/$user/.applications/dbspace/.app_info.db
-	fi
-
-	chown -R $user:users /home/$user/.applications/dbspace/
-	chsmack -a User /home/$user/.applications/dbspace/.app_info.db*
+# call function defined in meta-generic
+for user in alice bob carol guest; do
+	generic_desktop_applications_fix_userhome $user
 done
 
-
-if [ -f /usr/bin/weston ]; then
-
-	cat >>/etc/xdg/weston/weston.ini <<EOF
-
-## desktop applications ##
-
-[launcher]
-icon=/usr/share/icons/tizen/32x32/calculator.png
-path=/usr/apps/org.tizen.calculator/bin/calculator
-
-EOF
-
-fi
 

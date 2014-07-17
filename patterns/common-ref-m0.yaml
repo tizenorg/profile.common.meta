@@ -1,8 +1,0 @@
-Summary: Common Ref M0
-Description: Common Ref M0
-Name: common-ref-m0
-Packages:
-- usb-server
-- usbutils
-- sdbd
-- security-server

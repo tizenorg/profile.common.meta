@@ -1,4 +1,4 @@
-Name: Common Emulator Wayland MBR i586
+Name: common-emulator-wayland-mbr-i586
 Architecture: ia32
 Schedule: "*"
 Active: True
@@ -6,9 +6,13 @@ Platform: Wayland
 Part: common-mbr
 Mic2Options: -f loop --pack-to=@NAME@.tar.gz
 FileName: common-emulator-wayland-mbr-i586
-Kernel: kernel-x86-common
+Kernel: kernel-profile-common
 Repos:
     - common-emulator-wayland_i586
 ExtraPackages:
     - sdbd
     - system-plugin-emulator
+Groups:
+    - Generic Multimedia Intel
+PostScripts:
+    - generic-multimedia-intel

@@ -18,15 +18,19 @@ Default:
     SaveRepos: False
     UserGroups: "audio,video"
     Groups:
+        - Generic Base
         - Common Base
-        - Common Console Tools
+        - Generic Console Tools
+        - Generic Packaging
         - Common Packaging
-        - Common Adaptation
+        - Generic Adaptation
     PostScripts:
+        - generic-base
         - common-base
-        - common-console-tools
+        - generic-console-tools
+        - generic-packaging
         - common-packaging
-        - common-adaptation
+        - generic-adaptation
     NoChrootScripts:
         - buildname
 
@@ -43,21 +47,62 @@ Wayland:
     Part: common-mbr
     UserGroups: "audio,video"
     Groups:
+        - Generic Wayland
         - Common Wayland
+        - Generic Middleware
         - Common Middleware
-        - Common Applications
-        - Common Bluetooth
-        - Common Multimedia
+        - Generic Applications
+        - Generic Bluetooth
+        - Generic Multimedia
+        - Generic Desktop Applications
         - Common Desktop Applications
+        - Generic Crosswalk
         - Common Crosswalk
+        - Generic Qt5
         - Common Qt5
     PostScripts:
+        - generic-wayland
         - common-wayland
+        - generic-middleware
         - common-middleware
-        - common-applications
-        - common-bluetooth
-        - common-multimedia
+        - generic-applications
+        - generic-bluetooth
+        - generic-multimedia
+        - generic-desktop-applications
         - common-desktop-applications
+        - generic-crosswalk
         - common-crosswalk
+        - generic-qt5
+        - common-qt5
+    Repos: []
+
+X11:
+    Part: common-mbr
+    UserGroups: "audio,video"
+    Groups:
+        - Generic X11
+        - Generic Middleware
+        - Common Middleware
+        - Generic Applications
+        - Generic Bluetooth
+        - Generic Multimedia
+        - Generic Desktop Applications
+        - Common Desktop Applications
+        - Generic Crosswalk
+        - Common Crosswalk
+        - Generic Qt5
+        - Common Qt5
+    PostScripts:
+        - generic-x11
+        - generic-middleware
+        - common-middleware
+        - generic-applications
+        - generic-bluetooth
+        - generic-multimedia
+        - generic-desktop-applications
+        - common-desktop-applications
+        - generic-crosswalk
+        - common-crosswalk
+        - generic-qt5
         - common-qt5
     Repos: []

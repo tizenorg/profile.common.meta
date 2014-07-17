@@ -1,10 +1,5 @@
-############### common-packaging.post ################
-
-rm -rf /root/.zypp
-
-# was: rpm.post
-rm -f /var/lib/rpm/__db*
-rpmdb --rebuilddb
+#!/bin/sh
+echo "############### common-packaging.post ################"
 
 # generate repo files for zypper
 function genrepo() {

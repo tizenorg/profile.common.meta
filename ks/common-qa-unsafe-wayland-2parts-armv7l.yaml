@@ -1,20 +1,19 @@
-Name: common-qa-unsafe-wayland-mbr-x86_64
-Architecture: x86_64
+Name: common-qa-unsafe-wayland-2parts-armv7l
+Architecture: armv7l
 Schedule: "*"
 Active: True
 Platform: Wayland
-Part: common-mbr
-FileName: common-qa-unsafe-wayland-mbr-x86_64
+Part: common-mbr-2parts
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz
+FileName: common-qa-unsafe-wayland-2parts-armv7l
 Kernel: kernel-profile-common
 Repos:
-    - common-wayland_x86_64
+    - common-wayland_armv7l
 Groups:
-    - Generic Multimedia Intel
     - Generic Automated QA Tools
     - Generic QA Tools
     - Common QA Tools
 PostScripts:
-    - generic-multimedia-intel
     - generic-autoqa
     - generic-qa
     - common-qa

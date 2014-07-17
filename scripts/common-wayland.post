@@ -1,11 +1,11 @@
-#################### common-wayland.post ##################
+#!/bin/sh
+echo "#################### common-wayland.post ##################"
 
-# Add 'app' user to the display group
-/usr/sbin/groupmod -A app display
-
-# add other users to display group
-for user in alice bob carol guest; do
-	/usr/sbin/groupmod -A $user display
+# add 'app' and other users to display group
+for user in alice bob carol guest app; do
+	if generic_base_user_exists $user; then
+		/usr/sbin/groupmod -A $user display
+	fi
 done
 
 # Enable a logind session for users on seat0 (the default seat for
@@ -13,6 +13,7 @@ done
 unitdir=/usr/lib/systemd/system
 mkdir -p $unitdir/graphical.target.wants
 for user in app alice bob carol guest; do
+	generic_base_user_exists $user || continue
 	uid=$(getent passwd $user|cut -f3 -d':')
 	ln -s ../user-session-launch@.service $unitdir/graphical.target.wants/user-session-launch@seat0-$uid.service
 done

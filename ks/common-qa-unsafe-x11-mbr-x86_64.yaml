@@ -1,19 +1,21 @@
-Name: common-qa-unsafe-wayland-mbr-x86_64
+Name: common-qa-unsafe-x11-mbr-x86_64
 Architecture: x86_64
 Schedule: "*"
 Active: True
-Platform: Wayland
+Platform: X11
 Part: common-mbr
-FileName: common-qa-unsafe-wayland-mbr-x86_64
+FileName: common-qa-unsafe-x11-mbr-x86_64
 Kernel: kernel-profile-common
 Repos:
-    - common-wayland_x86_64
+    - common-x11_x86_64
 Groups:
+    - Generic X11 Intel
     - Generic Multimedia Intel
     - Generic Automated QA Tools
     - Generic QA Tools
     - Common QA Tools
 PostScripts:
+    - generic-x11-intel
     - generic-multimedia-intel
     - generic-autoqa
     - generic-qa
