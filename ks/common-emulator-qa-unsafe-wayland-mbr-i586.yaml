@@ -1,4 +1,4 @@
-Name: Common Emulator QA Unsafe Wayland MBR i586
+Name: common-emulator-qa-unsafe-wayland-mbr-i586
 Architecture: ia32
 Schedule: "*"
 Active: True
@@ -6,13 +6,19 @@ Platform: Wayland
 Part: common-mbr
 Mic2Options: -f loop --pack-to=@NAME@.tar.gz
 FileName: common-emulator-qa-unsafe-wayland-mbr-i586
-Kernel: kernel-x86-common
+Kernel: kernel-profile-common
 Repos:
     - common-emulator-wayland_i586
 Groups:
-    - Common Automated QA Tools
+    - Generic Multimedia Intel
+    - Generic Automated QA Tools
+    - Generic QA Tools
+    - Common QA Tools
 ExtraPackages:
     - sdbd
     - system-plugin-emulator
 PostScripts:
-    - common-autoqa
+    - generic-multimedia-intel
+    - generic-autoqa
+    - generic-qa
+    - common-qa

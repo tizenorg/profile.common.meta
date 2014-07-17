@@ -1,0 +1,10 @@
+Name: common-wayland-2parts-armv7l
+Architecture: armv7l
+Schedule: "*"
+Active: True
+Platform: Wayland
+Part: common-mbr-2parts
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz
+FileName: common-wayland-2parts-armv7l
+Repos:
+    - common-wayland_armv7l

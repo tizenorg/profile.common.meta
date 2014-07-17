@@ -10,6 +10,8 @@ Group:		Base/Configuration
 URL:		http://www.tizen.org
 Source:		%{name}-%{version}.tar.bz2
 
+Requires:	meta-generic
+
 %description
 Common Meta Data.
 Includes patterns and image configurations for Common images.

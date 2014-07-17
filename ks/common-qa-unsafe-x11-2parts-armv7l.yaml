@@ -1,13 +1,14 @@
-Name: common-qa-unsafe-minimal-mbr-x86_64
-Architecture: x86_64
+Name: common-qa-unsafe-x11-2parts-armv7l
+Architecture: armv7l
 Schedule: "*"
 Active: True
-Platform: Minimal
-Part: common-mbr
-FileName: common-qa-unsafe-minimal-mbr-x86_64
+Platform: X11
+Part: common-mbr-2parts
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz
+FileName: common-qa-unsafe-x11-2parts-armv7l
 Kernel: kernel-profile-common
 Repos:
-    - common-wayland_x86_64
+    - common-x11_armv7l
 Groups:
     - Generic Automated QA Tools
     - Generic QA Tools

@@ -2,17 +2,8 @@ Summary: Common Middleware
 Description: Common Middleware
 Name: common-middleware
 Packages:
-- calendar-service
-- csr-framework
-- elm-misc
-- efl-theme-tizen-hd
-- evolution-data-server
-- libprivilege-control-conf
 - model-config-generic
-- notification-service
+- ofono
 - neard
 - neardal
-- obexd
-- ofono
-- pkgmgr-server
-- sqlite3
+

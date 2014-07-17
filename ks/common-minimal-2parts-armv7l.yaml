@@ -1,0 +1,11 @@
+Name: common-minimal-2parts-armv7l
+Architecture: armv7l
+Schedule: "*"
+Active: True
+Platform: Minimal
+Part: common-mbr-2parts
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz
+FileName: common-minimal-2parts-armv7l
+Kernel: kernel-profile-common
+Repos:
+    - common-wayland_armv7l
