@@ -14,7 +14,4 @@ Packages:
 - gst-plugins-base
 - gst-plugins-good
 - gstreamer
-- gstreamer-vaapi
 - gstreamer-utils
-- libva-intel-driver
-- vaapi-tools
