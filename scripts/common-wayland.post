@@ -51,3 +51,8 @@ if [ -w "$dst" ] ; then
 fi
 
 #}
+
+# tag the background image with the current snapshot id
+arch=$(rpm -qa | grep kernel-common | awk -F- '{printf("%s %s",$3,$4);}')
+/usr/bin/mark_image.py /usr/share/backgrounds/tizen/current "Tizen Common: @BUILD_ID@ $arch" ffffff 50 90 95 95
+
