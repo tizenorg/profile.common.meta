@@ -4,3 +4,8 @@ echo "############### common-crosswalk.post ################"
 # start wrt widgets preinstall
 prepare_widgets.sh
 
+# workaround TC-1501
+# only one 'xwalk' binary should match (in 32 or 64 bits)
+for x in /usr/lib*/xwalk/xwalk; do
+	ln -sf $x /usr/bin/xwalk
+done
