@@ -6,4 +6,4 @@ Packages:
 - ofono
 - neard
 - neardal
-
+- usb-server
