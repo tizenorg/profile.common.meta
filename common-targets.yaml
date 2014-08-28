@@ -20,6 +20,7 @@ Targets:
         Images:
             - common-wayland-mbr-x86_64.yaml
             - common-qa-unsafe-wayland-mbr-x86_64.yaml
+            - common-qa-unsafe-wayland-efi-x86_64.yaml
 
     -   Name: x86_64-x11
         Images:

@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "#################### generic-efi-boot.post ##################"
+
+# Install and configure the boot-loader, /etc/fstab, and so on
+/usr/sbin/setup-scripts-boot

@@ -1,0 +1,31 @@
+Name: common-qa-unsafe-wayland-efi-x86_64
+Architecture: x86_64
+Schedule: "*"
+Active: True
+Platform: Wayland
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
+Part: common-efi
+FileName: common-qa-unsafe-wayland-efi-x86_64
+Kernel: kernel-profile-common
+Repos:
+    - common-wayland_x86_64
+Groups:
+    - Generic Multimedia Intel
+    - Generic Automated QA Tools
+    - Generic QA Tools
+    - Common QA Tools
+    - Generic EFI Boot
+PostScripts:
+    - generic-multimedia-intel
+    - generic-autoqa
+    - generic-qa
+    - common-qa
+    - generic-efi-boot
+ExtraPackages:
+    - gummiboot-splash
+    - setup-scripts-gummiboot
+    - setup-scripts-clone
+    - gptfdisk
+

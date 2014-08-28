@@ -1,0 +1,8 @@
+Summary: Generic EFI Boot
+Description: Generic EFI Boot
+Name: generic-efi-boot
+Packages:
+- gummiboot-splash
+- setup-scripts-gummiboot
+- setup-scripts-clone
+- gptfdisk
