@@ -4,7 +4,7 @@ Schedule: "*"
 Active: True
 Platform: Wayland
 Part: common-mbr
-Mic2Options: -f loop --pack-to=@NAME@.tar.gz
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz --copy-kernel
 FileName: common-emulator-qa-unsafe-wayland-mbr-i586
 Kernel: kernel-profile-common
 Repos:
