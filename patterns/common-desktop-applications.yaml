@@ -2,7 +2,6 @@ Summary: Common Desktop Applications
 Description: Common Desktop Applications
 Name: common-desktop-applications
 Packages:
-- weston-clients
 - org.tizen.calculator
 - elementary-tools
 - evas-examples
