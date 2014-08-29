@@ -5,23 +5,17 @@ Targets:
             - common-installer-mbr-i586.yaml
             - common-installer-efi-i586.yaml
             - common-wayland-mbr-i586.yaml
-            - common-wayland-efi-i586.yaml
             - common-qa-unsafe-wayland-mbr-i586.yaml
-            - common-qa-unsafe-wayland-efi-i586.yaml
 
     -   Name: emulator32-wayland
         Images:
             - common-emulator-wayland-mbr-i586.yaml
-            - common-emulator-wayland-efi-i586.yaml
             - common-emulator-qa-unsafe-wayland-mbr-i586.yaml
-            - common-emulator-qa-unsafe-wayland-efi-i586.yaml
 
     -   Name: ia32-x11
         Images:
             - common-x11-mbr-i586.yaml
-            - common-x11-efi-i586.yaml
             - common-qa-unsafe-x11-mbr-i586.yaml
-            - common-qa-unsafe-x11-efi-i586.yaml
 
     -   Name: x86_64-wayland
         Images:
