@@ -16,13 +16,13 @@ Groups:
     - Generic Automated QA Tools
     - Generic QA Tools
     - Common QA Tools
-    - Generic EFI Boot
+    - Generic Setup Boot
 PostScripts:
     - generic-multimedia-intel
     - generic-autoqa
     - generic-qa
     - common-qa
-    - generic-efi-boot
+    - generic-setup-boot
 ExtraPackages:
     - gummiboot-splash
     - setup-scripts-gummiboot
