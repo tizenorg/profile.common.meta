@@ -1,5 +1,5 @@
-Name: common-qa-unsafe-wayland-efi-x86_64
-Architecture: x86_64
+Name: common-emulator-wayland-efi-i586
+Architecture: ia32
 Schedule: "*"
 Active: True
 Platform: Wayland
@@ -7,19 +7,17 @@ InstallerFrameworkPlugins:
     - bootloader
     - fstab
 Part: common-efi
-FileName: common-qa-unsafe-wayland-efi-x86_64
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz --copy-kernel
+FileName: common-emulator-wayland-efi-i586
 Kernel: kernel-profile-common
 Repos:
-    - common-wayland_x86_64
+    - common-emulator-wayland_i586
+ExtraPackages:
+    - sdbd
+    - system-plugin-emulator
 Groups:
     - Generic Multimedia Intel
-    - Generic Automated QA Tools
-    - Generic QA Tools
-    - Common QA Tools
     - Generic Setup Boot
 PostScripts:
     - generic-multimedia-intel
-    - generic-autoqa
-    - generic-qa
-    - common-qa
     - generic-setup-boot

@@ -1,0 +1,21 @@
+Name: common-x11-efi-i586
+Architecture: ia32
+Schedule: "*"
+Active: True
+Platform: X11
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
+Part: common-efi
+FileName: common-x11-efi-i586
+Kernel: kernel-profile-common
+Repos:
+    - common-x11_i586
+Groups:
+    - Generic X11 Intel
+    - Generic Multimedia Intel
+    - Generic Setup Boot
+PostScripts:
+    - generic-x11-intel
+    - generic-multimedia-intel
+    - generic-setup-boot

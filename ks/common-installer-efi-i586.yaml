@@ -1,0 +1,19 @@
+Name: common-installer-efi-i586
+Architecture: ia32
+Schedule: "*"
+Active: True
+Platform: Installer
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
+Part: common-efi
+FileName: common-installer-efi-i586
+Kernel: kernel-profile-common
+Repos:
+    - common-wayland_i586
+Groups:
+    - Generic Setup Boot
+PostScripts:
+    - generic-setup-boot
+ExtraPackages:
+    - system-installer

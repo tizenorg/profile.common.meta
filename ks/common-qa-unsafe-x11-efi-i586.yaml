@@ -1,23 +1,25 @@
-Name: common-qa-unsafe-wayland-efi-x86_64
-Architecture: x86_64
+Name: common-qa-unsafe-x11-efi-i586
+Architecture: ia32
 Schedule: "*"
 Active: True
-Platform: Wayland
+Platform: X11
 InstallerFrameworkPlugins:
     - bootloader
     - fstab
 Part: common-efi
-FileName: common-qa-unsafe-wayland-efi-x86_64
+FileName: common-qa-unsafe-x11-efi-i586
 Kernel: kernel-profile-common
 Repos:
-    - common-wayland_x86_64
+    - common-x11_i586
 Groups:
+    - Generic X11 Intel
     - Generic Multimedia Intel
     - Generic Automated QA Tools
     - Generic QA Tools
     - Common QA Tools
     - Generic Setup Boot
 PostScripts:
+    - generic-x11-intel
     - generic-multimedia-intel
     - generic-autoqa
     - generic-qa
