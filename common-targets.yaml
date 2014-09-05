@@ -3,7 +3,6 @@ Targets:
     -   Name: ia32-wayland
         Images:
             - common-installer-mbr-i586.yaml
-            - common-installer-efi-i586.yaml
             - common-wayland-mbr-i586.yaml
             - common-qa-unsafe-wayland-mbr-i586.yaml
 
@@ -19,6 +18,7 @@ Targets:
 
     -   Name: x86_64-wayland
         Images:
+            - common-installer-efi-x86_64.yaml
             - common-wayland-mbr-x86_64.yaml
             - common-wayland-efi-x86_64.yaml
             - common-qa-unsafe-wayland-mbr-x86_64.yaml
