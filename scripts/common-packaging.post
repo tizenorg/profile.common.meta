@@ -3,25 +3,47 @@ echo "############### common-packaging.post ################"
 
 # generate repo files for zypper
 function genrepo() {
-	local reponame=$1
-	local url=$2
+	local url=$1
+	local reponame=$2
+	local filename=${3:-$2}
+	local enabled=${4:-0}
 
-cat >> /etc/zypp/repos.d/${reponame}.repo << EOF
-[${reponame}]
-name=${reponame}
-enabled=1
+	local prefix=${TZ_BUILD_VENDOR}-${TZ_BUILD_PROFILE}-${TZ_BUILD_REPO}
+
+	# remove double slashes if any
+	url=$(sed -e  's|/\+|/|g' -e 's|:/|://|' <<<$url)
+
+	cat >> /etc/zypp/repos.d/$prefix-${filename}.repo << EOF
+[$prefix-${reponame}]
+name=$prefix-${reponame}
+enabled=$enabled
 autorefresh=0
-baseurl=
 baseurl=${url}?ssl_verify=no
 type=rpm-md
 gpgcheck=0
+ 
 EOF
 }
 
-arch=ia32
-[ -d /usr/lib64 ] && arch=x86_64
+# source /etc/tizen-build.conf to get more infos about project, repos etc.
+. /etc/tizen-build.conf 
 
-# quick fix for TC-1198
-# will not work for emulator32
-genrepo common-wayland-${arch} http://download.tizen.org/snapshots/tizen/common/@BUILD_ID@/repos/${arch}-wayland/packages/
+# adjust build_id if this scripts executes before the replacement in /etc/tizen-build.conf
+TZ_BUILD_ID=$(echo $TZ_BUILD_ID | sed 's|@BUILD_ID[@]|@BUILD_ID@|')
+
+# snapshot repo
+genrepo ${TZ_BUILD_SNAPSHOT_URL}/${TZ_BUILD_ID}/repos/${TZ_BUILD_REPO}/packages snapshot snapshot 1
+genrepo ${TZ_BUILD_SNAPSHOT_URL}/${TZ_BUILD_ID}/repos/${TZ_BUILD_REPO}/debug snapshot-debug snapshot 1
+
+# latest repo
+genrepo ${TZ_BUILD_SNAPSHOT_URL}/latest/repos/${TZ_BUILD_REPO}/packages update update 0
+genrepo ${TZ_BUILD_SNAPSHOT_URL}/latest/repos/${TZ_BUILD_REPO}/debug update-debug update 0
+
+# daily repo
+genrepo ${TZ_BUILD_DAILY_URL}/latest/repos/${TZ_BUILD_REPO}/packages daily daily 0
+genrepo ${TZ_BUILD_DAILY_URL}/latest/repos/${TZ_BUILD_REPO}/debug daily-debug daily 0
+
+# weekly repo
+genrepo ${TZ_BUILD_WEEKLY_URL}/latest/repos/${TZ_BUILD_REPO}/packages weekly weekly 0
+genrepo ${TZ_BUILD_WEEKLY_URL}/latest/repos/${TZ_BUILD_REPO}/debug weekly-debug weekly 0
 
