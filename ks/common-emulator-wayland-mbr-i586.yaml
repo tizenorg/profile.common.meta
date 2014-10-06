@@ -6,7 +6,7 @@ Platform: Wayland
 Part: common-mbr
 Mic2Options: -f loop --pack-to=@NAME@.tar.gz --copy-kernel
 FileName: common-emulator-wayland-mbr-i586
-Kernel: kernel-profile-common
+Kernel: kernel-common-i386-emulator
 Repos:
     - common-emulator-wayland_i586
 ExtraPackages:
