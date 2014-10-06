@@ -6,5 +6,6 @@ Platform: Wayland
 Part: common-mbr-2parts
 Mic2Options: -f loop --pack-to=@NAME@.tar.gz --copy-kernel
 FileName: common-wayland-2parts-armv7l
+Kernel: kernel-profile-common
 Repos:
     - common-wayland_armv7l
