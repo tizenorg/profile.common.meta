@@ -24,6 +24,7 @@ Default:
         - Generic Packaging
         - Common Packaging
         - Generic Adaptation
+        - Common Adaptation
     PostScripts:
         - generic-base
         - common-base
@@ -31,6 +32,7 @@ Default:
         - generic-packaging
         - common-packaging
         - generic-adaptation
+        - common-adaptation
     NoChrootScripts:
         - buildname
 
