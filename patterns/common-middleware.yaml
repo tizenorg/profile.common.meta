@@ -4,6 +4,7 @@ Name: common-middleware
 Packages:
 - model-config-generic
 - ofono
+- meta-generic-adaptation
 - neard
 - neardal
 - usb-server
