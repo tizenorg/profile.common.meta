@@ -33,5 +33,7 @@ Targets:
             - common-x11-2parts-armv7l.yaml
 
     -   Name: arm64-wayland
-        Images: []
+        Images: common-wayland-2parts-aarch64.yaml
 
+    -   Name: arm64-x11
+        Images: common-x11-2parts-aarch64.yaml

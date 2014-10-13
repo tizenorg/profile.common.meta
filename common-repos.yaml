@@ -12,7 +12,7 @@ Repositories:
         Options: --ssl_verify=no
 
     -   Name: common-wayland_aarch64
-        Url:  http://download.tizen.org/snapshots/tizen/common/@BUILD_ID@/repos/arm64-wayland/packages/
+        Url:  http://download.tizen.org/live/devel:/arm_toolchain:/Mobile:/Tizen_Common/arm64-wayland/
         Options: --ssl_verify=no
 
     -   Name: common-emulator-wayland_i586
@@ -29,4 +29,8 @@ Repositories:
 
     -   Name: common-x11_armv7l
         Url:  http://download.tizen.org/snapshots/tizen/common/@BUILD_ID@/repos/arm-x11/packages/
+        Options: --ssl_verify=no
+
+    -   Name: common-x11_aarch64
+        Url:  http://download.tizen.org/live/devel:/arm_toolchain:/Mobile:/Tizen_Common/arm64-x11/
         Options: --ssl_verify=no
