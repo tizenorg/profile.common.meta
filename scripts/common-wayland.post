@@ -2,7 +2,7 @@
 echo "#################### common-wayland.post ##################"
 
 # add users to display group
-for user in alice bob carol guest; do
+for user in alice bob carol guest developer; do
 	if generic_base_user_exists $user; then
 		/usr/sbin/groupmod -A $user display
 	fi
@@ -12,7 +12,7 @@ done
 # graphical sessions)
 unitdir=/usr/lib/systemd/system
 mkdir -p $unitdir/graphical.target.wants
-for user in alice bob carol guest; do
+for user in alice bob carol guest developer; do
 	generic_base_user_exists $user || continue
 	uid=$(getent passwd $user|cut -f3 -d':')
 	ln -s ../user-session-launch@.service $unitdir/graphical.target.wants/user-session-launch@seat0-$uid.service
