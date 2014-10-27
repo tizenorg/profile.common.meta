@@ -1,0 +1,11 @@
+Name: common-minimal-4parts-armv7l
+Architecture: armv7l
+Schedule: "*"
+Active: True
+Platform: Minimal
+Part: common-mbr-4parts-arm
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz --copy-kernel
+FileName: common-minimal-4parts-armv7l
+Kernel: arm-odroidu3-linux-kernel
+Repos:
+    - common-wayland_armv7l
