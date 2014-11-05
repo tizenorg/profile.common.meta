@@ -23,6 +23,11 @@ Includes patterns and image configurations for Common images.
 make
 
 %install
+
+%ifarch aarch64
+rm -f patterns/common-crosswalk.yaml
+rm -f scripts/common-crosswalk.post
+%endif
 %make_install
 
 
