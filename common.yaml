@@ -74,6 +74,15 @@ MinimalWayland:
         - common-qt5
     Repos: []
 
+Boot-Odroidu3:
+    Part: common-mbr-boot
+    Desktop: None
+    SaveRepos: False
+    UserGroups: "audio,video"
+    Groups:
+        - Common Boot Odroid U3
+    Repos: []
+
 Wayland:
     Part: common-mbr
     UserGroups: "audio,video"
