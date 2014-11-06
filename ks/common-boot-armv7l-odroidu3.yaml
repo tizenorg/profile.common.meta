@@ -2,12 +2,11 @@ Name: common-boot-armv7l-odroidu3
 Architecture: armv7l
 Schedule: "*"
 Active: True
-Platform: Wayland
+Platform: Boot-Odroidu3
 Part: common-mbr-boot
-Mic2Options: -f loop --pack-to=@NAME@.tar.gz --copy-kernel
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz
 FileName: common-boot-armv7l-odroidu3
-Kernel: arm-odroidu3-linux-kernel
-PrePackages: u-boot
+Group: Common Boot Odroid U3
 Attachment: /var/tmp/u-boot/u-boot-mmc.bin /var/tmp/u-boot/params.bin
 Repos:
     - common-wayland_armv7l
