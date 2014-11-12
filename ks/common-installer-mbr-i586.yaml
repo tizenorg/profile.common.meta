@@ -3,6 +3,9 @@ Architecture: ia32
 Schedule: "*"
 Active: True
 Platform: Installer
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
 Part: common-mbr
 FileName: common-installer-mbr-i586
 Kernel: kernel-profile-common
@@ -10,3 +13,7 @@ Repos:
     - common-wayland_i586
 ExtraPackages:
     - system-installer
+Groups:
+    - Generic Setup Boot Bios
+PostScripts:
+    - generic-setup-boot-bios

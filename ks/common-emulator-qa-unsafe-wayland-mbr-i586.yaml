@@ -3,6 +3,9 @@ Architecture: ia32
 Schedule: "*"
 Active: True
 Platform: Wayland
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
 Part: common-mbr
 Mic2Options: -f loop --pack-to=@NAME@.tar.gz --copy-kernel
 FileName: common-emulator-qa-unsafe-wayland-mbr-i586
@@ -14,6 +17,7 @@ Groups:
     - Generic Automated QA Tools
     - Generic QA Tools
     - Common QA Tools
+    - Generic Setup Boot Bios
 ExtraPackages:
     - sdbd
     - system-plugin-emulator
@@ -22,3 +26,4 @@ PostScripts:
     - generic-autoqa
     - generic-qa
     - common-qa
+    - generic-setup-boot-bios

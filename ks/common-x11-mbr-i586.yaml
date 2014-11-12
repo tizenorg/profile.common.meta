@@ -3,6 +3,9 @@ Architecture: ia32
 Schedule: "*"
 Active: True
 Platform: X11
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
 Part: common-mbr
 FileName: common-x11-mbr-i586
 Kernel: kernel-profile-common
@@ -11,6 +14,8 @@ Repos:
 Groups:
     - Generic X11 Intel
     - Generic Multimedia Intel
+    - Generic Setup Boot Bios
 PostScripts:
     - generic-x11-intel
     - generic-multimedia-intel
+    - generic-setup-boot-bios

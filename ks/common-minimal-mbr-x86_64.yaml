@@ -3,8 +3,15 @@ Architecture: x86_64
 Schedule: "*"
 Active: True
 Platform: Minimal
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
 Part: common-mbr
 FileName: common-minimal-mbr-x86_64
 Kernel: kernel-profile-common
 Repos:
     - common-wayland_x86_64
+Groups:
+    - Generic Setup Boot Bios
+PostScripts:
+    - generic-setup-boot-bios

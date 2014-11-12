@@ -3,6 +3,9 @@ Architecture: x86_64
 Schedule: "*"
 Active: True
 Platform: Wayland
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
 Part: common-mbr
 FileName: common-qa-unsafe-wayland-mbr-x86_64
 Kernel: kernel-profile-common
@@ -13,8 +16,10 @@ Groups:
     - Generic Automated QA Tools
     - Generic QA Tools
     - Common QA Tools
+    - Generic Setup Boot Bios
 PostScripts:
     - generic-multimedia-intel
     - generic-autoqa
     - generic-qa
     - common-qa
+    - generic-setup-boot-bios

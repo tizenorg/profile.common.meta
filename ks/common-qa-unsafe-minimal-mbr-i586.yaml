@@ -3,7 +3,13 @@ Architecture: ia32
 Schedule: "*"
 Active: True
 Platform: Minimal
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
 Part: common-mbr
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
 FileName: common-qa-unsafe-minimal-mbr-i586
 Kernel: kernel-profile-common
 Repos:
@@ -12,7 +18,9 @@ Groups:
     - Generic Automated QA Tools
     - Generic QA Tools
     - Common QA Tools
+    - Generic Setup Boot Bios
 PostScripts:
     - generic-autoqa
     - generic-qa
     - common-qa
+    - generic-setup-boot-bios

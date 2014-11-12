@@ -3,6 +3,9 @@ Architecture: ia32
 Schedule: "*"
 Active: True
 Platform: Wayland
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
 Part: common-mbr
 Mic2Options: -f loop --pack-to=@NAME@.tar.gz --copy-kernel
 FileName: common-emulator-wayland-mbr-i586
@@ -14,5 +17,7 @@ ExtraPackages:
     - system-plugin-emulator
 Groups:
     - Generic Multimedia Intel
+    - Generic Setup Boot Bios
 PostScripts:
     - generic-multimedia-intel
+    - generic-setup-boot-bios

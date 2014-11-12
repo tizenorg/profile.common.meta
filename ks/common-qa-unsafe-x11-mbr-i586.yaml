@@ -3,6 +3,9 @@ Architecture: ia32
 Schedule: "*"
 Active: True
 Platform: X11
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
 Part: common-mbr
 FileName: common-qa-unsafe-x11-mbr-i586
 Kernel: kernel-profile-common
@@ -14,9 +17,11 @@ Groups:
     - Generic Automated QA Tools
     - Generic QA Tools
     - Common QA Tools
+    - Generic Setup Boot Bios
 PostScripts:
     - generic-x11-intel
     - generic-multimedia-intel
     - generic-autoqa
     - generic-qa
     - common-qa
+    - generic-setup-boot-bios
