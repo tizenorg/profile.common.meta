@@ -1,5 +1,8 @@
 Summary: Common Base
 Description: Common Base
 Name: common-base
-Packages: []
-
+Packages:
+- gumd
+- buxton
+- cynara
+- security-manager
