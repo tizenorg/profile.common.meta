@@ -14,5 +14,6 @@ for user in alice bob carol guest; do
 	generic_base_fix_user_homedir $user
 done
 
-
+######### add 'guest' user that runs bt-service daemon to vconf_bt group
+/usr/sbin/groupmod -A guest vconf_bt
 
