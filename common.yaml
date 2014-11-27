@@ -121,6 +121,7 @@ MinimalX11:
     UserGroups: "audio,video"
     Groups:
         - Generic X11
+        - Common X11
         - Generic Middleware
         - Common Middleware
         - Generic Applications
@@ -132,6 +133,7 @@ MinimalX11:
         - Common Qt5
     PostScripts:
         - generic-x11
+		- common-x11
         - generic-middleware
         - common-middleware
         - generic-applications
@@ -148,6 +150,7 @@ X11:
     UserGroups: "audio,video"
     Groups:
         - Generic X11
+        - Common X11
         - Generic Middleware
         - Common Middleware
         - Generic Applications
@@ -161,6 +164,7 @@ X11:
         - Common Qt5
     PostScripts:
         - generic-x11
+        - common-x11
         - generic-middleware
         - common-middleware
         - generic-applications
