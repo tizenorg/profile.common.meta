@@ -133,7 +133,7 @@ MinimalX11:
         - Common Qt5
     PostScripts:
         - generic-x11
-		- common-x11
+        - common-x11
         - generic-middleware
         - common-middleware
         - generic-applications
