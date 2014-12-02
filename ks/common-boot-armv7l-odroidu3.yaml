@@ -7,6 +7,8 @@ Part: common-mbr-boot
 Mic2Options: -f loop --pack-to=@NAME@.tar.gz
 FileName: common-boot-armv7l-odroidu3
 Group: Common Boot Odroid U3
-Attachment: /var/tmp/u-boot/u-boot-mmc.bin /var/tmp/u-boot/params.bin
+Attachment:
+    - /var/tmp/u-boot/u-boot-mmc.bin
+    - /var/tmp/u-boot/params.bin
 Repos:
     - common-wayland_armv7l
