@@ -1,0 +1,11 @@
+Name: common-boot-arm64-juno
+Architecture: aarch64
+Schedule: "*"
+Active: True
+Platform: Boot-Juno
+Part: common-mbr-boot
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz
+FileName: common-boot-arm64-juno
+Group: Common Boot Juno
+Repos:
+    - common-wayland_arm64

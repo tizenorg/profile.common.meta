@@ -1,0 +1,6 @@
+Summary: Common Boot Juno
+Description: Common Boot Juno
+Name: common-boot-juno
+Packages:
+- arm64-juno-linux-kernel
+- arm64-juno-linux-kernel-modules
