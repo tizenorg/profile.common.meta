@@ -8,32 +8,6 @@ for user in alice bob carol guest developer; do
 	fi
 done
 
-# Enable a logind session for users on seat0 (the default seat for
-# graphical sessions)
-unitdir=/usr/lib/systemd/system
-mkdir -p $unitdir/graphical.target.wants
-for user in alice bob carol guest developer; do
-	generic_base_user_exists $user || continue
-	uid=$(getent passwd $user|cut -f3 -d':')
-	ln -s ../user-session-launch@.service $unitdir/graphical.target.wants/user-session-launch@seat0-$uid.service
-done
-
-# user sessions must start after graphical target
-patch -b -p1 -d/ <<'EOF'
---- /lib/systemd/system/user-session-launch@.service.orig	2014-03-17 17:50:18.000000000 -0700
-+++ /lib/systemd/system/user-session-launch@.service	2014-04-15 06:03:45.555682575 -0700
-@@ -1,7 +1,7 @@
- [Unit]
- Description=User Session Launcher
--After=systemd-user-sessions.service systemd-logind.service
--Requires=systemd-logind.service
-+After=systemd-user-sessions.service systemd-logind.service display-manager.path
-+Requires=systemd-logind.service display-manager.path
- 
- [Service]
- ExecStart=/usr/bin/user-session-launch %i
-EOF
-
 # clean weston target inside user session (installed by weston)
 rm -f /usr/lib/systemd/user/weston.target
 
