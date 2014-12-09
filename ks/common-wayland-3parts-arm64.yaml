@@ -2,7 +2,7 @@ Name: common-wayland-3parts-arm64
 Architecture: aarch64
 Schedule: "*"
 Active: True
-Platform: MinimalWayland
+Platform: Wayland
 Part: common-mbr-3parts
 Mic2Options: -f loop --pack-to=@NAME@.tar.gz
 FileName: common-wayland-3parts-arm64

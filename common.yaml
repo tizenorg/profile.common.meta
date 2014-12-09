@@ -45,35 +45,6 @@ Installer:
     BootloaderAppend: "rw vga=current quiet splash rootwait rootfstype=ext4 plymouth.enable=0"
     Repos: []
 
-MinimalWayland:
-    Part: common-mbr
-    UserGroups: "audio,video"
-    Groups:
-        - Generic Wayland
-        - Common Wayland
-        - Generic Middleware
-        - Common Middleware
-        - Generic Applications
-        - Generic Bluetooth
-        - Generic Multimedia
-        - Generic Desktop Applications
-        - Common Desktop Applications
-        - Generic Qt5
-        - Common Qt5
-    PostScripts:
-        - generic-wayland
-        - common-wayland
-        - generic-middleware
-        - common-middleware
-        - generic-applications
-        - generic-bluetooth
-        - generic-multimedia
-        - generic-desktop-applications
-        - common-desktop-applications
-        - generic-qt5
-        - common-qt5
-    Repos: []
-
 Boot-Odroidu3:
     Part: common-mbr-boot
     Desktop: None
@@ -121,35 +92,6 @@ Wayland:
         - common-desktop-applications
         - generic-crosswalk
         - common-crosswalk
-        - generic-qt5
-        - common-qt5
-    Repos: []
-
-MinimalX11:
-    Part: common-mbr
-    UserGroups: "audio,video"
-    Groups:
-        - Generic X11
-        - Common X11
-        - Generic Middleware
-        - Common Middleware
-        - Generic Applications
-        - Generic Bluetooth
-        - Generic Multimedia
-        - Generic Desktop Applications
-        - Common Desktop Applications
-        - Generic Qt5
-        - Common Qt5
-    PostScripts:
-        - generic-x11
-        - common-x11
-        - generic-middleware
-        - common-middleware
-        - generic-applications
-        - generic-bluetooth
-        - generic-multimedia
-        - generic-desktop-applications
-        - common-desktop-applications
         - generic-qt5
         - common-qt5
     Repos: []
