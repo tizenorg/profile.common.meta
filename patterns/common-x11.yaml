@@ -3,4 +3,5 @@ Description: Common X11
 Name: common-x11
 Packages:
 - x11-common
+- xf86-video-fbdev
 - desktop-skin
