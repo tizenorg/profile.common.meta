@@ -3,4 +3,5 @@ Description: Common Crosswalk
 Name: common-crosswalk
 Packages:
 - wrt-widgets
+- wgt-backend
 
