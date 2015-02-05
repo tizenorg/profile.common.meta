@@ -2,18 +2,14 @@
 echo "############### common-base.post ################"
 
 ######### multiuser mode: create additional users and fix their homedirs
-tizen_crypted_pass=$(perl -e 'print crypt("tizen", "aa")')
-uid=5001
-
 for user in alice bob carol guest; do
 	if ! generic_base_user_exists $user; then
-		useradd -u $uid -d /home/$user -g users -G audio,video,users,display -m --password "$tizen_crypted_pass" $user
-		uid=$(( $uid + 1 ))
+		gum-utils --offline --add-user --username="$user" --user_type=normal --usecret=tizen
 	fi
-
-	generic_base_fix_user_homedir $user
 done
 
 ######### add 'guest' user that runs bt-service daemon to vconf_bt group
-/usr/sbin/groupmod -A guest vconf_bt
+gum-utils --offline --add-member \
+	--gid=$(gum-utils --get-group-by-name --groupname=vconf_bt |& grep " gid : [0-9]*$" | sed 's/.* : //') \
+	--mem_uid=$(gum-utils --get-user-by-name --username=guest |& grep " uid : [0-9]*$" | sed 's/.* : //')
 
