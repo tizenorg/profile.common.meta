@@ -2,6 +2,7 @@ Summary: Common Crosswalk
 Description: Common Crosswalk
 Name: common-crosswalk
 Packages:
+- tizen-extensions-crosswalk
 - wrt-widgets
 - wgt-backend
 
