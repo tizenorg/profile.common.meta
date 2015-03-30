@@ -1,0 +1,22 @@
+Name: common-emulator-wayland-3parts-i586
+Architecture: ia32
+Schedule: "*"
+Active: True
+Platform: Wayland
+InstallerFrameworkPlugins:
+    - bootloader
+    - fstab
+Part: common-mbr-3parts-emulator
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz
+FileName: common-emulator-wayland-3parts-i586
+Repos:
+    - common-emulator-wayland_i586
+ExtraPackages:
+    - sdbd
+    - system-plugin-emulator
+Groups:
+    - Generic Multimedia Intel
+    - Generic Setup Boot Bios
+PostScripts:
+    - generic-multimedia-intel
+    - generic-setup-boot-bios

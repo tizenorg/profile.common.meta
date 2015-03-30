@@ -8,6 +8,7 @@ Targets:
     -   Name: emulator32-wayland
         Images:
             - common-emulator-wayland-mbr-i586.yaml
+            - common-emulator-wayland-3parts-i586.yaml
 
     -   Name: ia32-x11
         Images:
