@@ -7,6 +7,7 @@ InstallerFrameworkPlugins:
     - bootloader
     - fstab
 Part: common-mbr
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz --copy-kernel
 FileName: common-minimal-mbr-x86_64
 Kernel: kernel-profile-common
 Repos:

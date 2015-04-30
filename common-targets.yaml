@@ -19,6 +19,7 @@ Targets:
             - common-installer-efi-x86_64.yaml
             - common-wayland-mbr-x86_64.yaml
             - common-wayland-efi-x86_64.yaml
+            - common-minimal-mbr-x86_64.yaml
 
     -   Name: x86_64-x11
         Images:
