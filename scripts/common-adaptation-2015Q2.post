@@ -1,0 +1,45 @@
+#!/bin/sh
+echo "############### common-adaptation-2015Q2.post ################"
+
+# 1. set SMACK PERMISSIVE mode for buxton
+x=/etc/smack/permissive-buxton
+sed -i "s:[[]Configuration]:&\nSmackPermissive=$x:" /etc/buxton.conf
+echo 1 > $x
+chsmack -a -d $x /etc/buxton.conf
+
+# 2. replace xwalk-launcher
+rm -rf /usr/bin/xwalk-launcher
+cat << EOC > /usr/bin/xwalk-launcher
+#!/bin/sh
+
+export USE_OZONE_WAYLAND_VKB=1
+export OZONE_WAYLAND_USE_XDG_SHELL='defined'
+
+/usr/lib64/xwalk/xwalk \$(sed s/User::App::// /proc/\$\$/attr/current) --process-per-site --disable-shared-process-mode --disable-setuid-sandbox --external-extensions-path=/usr/lib64/tizen-extensions-crosswalk
+EOC
+chmod +x /usr/bin/xwalk-launcher
+chsmack -a -d /usr/bin/xwalk-launcher
+
+# 3. some setup
+chsmack -e System /usr/bin/pkgcmd /usr/bin/wgt-backend /usr/bin/pkgmgr-server
+chsmack -e System /usr/bin/mediadb-update
+chsmack -a -d /usr/apps/org.tizen.calculator/bin/calculator
+
+# 4. adaptation to default-ac-domain (fast-track)
+#x=/etc/smack/accesses.d/default-ac-domains
+#sed -i 's/System User::Home .*/System User::Home rwx--l/' $x
+#sed -i 's/System User::App::Shared .*/System User::App::Shared rwx--l/' $x
+
+# 5. adaptation to tizen-platform-config (fast-track)
+#chsmack -t /etc/skel/.applications/desktop /home/*/.applications/desktop
+
+# ?. temporarily deactivation of deviced
+for x in deviced-pre deviced zbooting-done; do
+  sed -i 's:ExecStart *=.*:ExecStart=/usr/bin/true:' /usr/lib/systemd/system/${x}.service
+done
+
+# ?. temporarily deactivation of widgets installation
+#x=/usr/lib/systemd/user/xwalk_widgets_preinstall.service
+#sed -i "s:ExecStart=.*:# &\nExecStart=/usr/bin/true:" $x
+#chsmack -a -d $x
+
