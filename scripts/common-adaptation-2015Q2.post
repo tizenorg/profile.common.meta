@@ -1,0 +1,63 @@
+#!/bin/sh
+echo "############### common-adaptation-2015Q2.post ################"
+
+# 1. set SMACK PERMISSIVE mode for buxton
+# ---------------------------------------
+# This mode is necessary because no deep study is done
+# in Tizen 3.0 of the labels to set to buxton keys
+# Note that here is some decision to take about the
+# use of the -s option of vconf-buxton-tool
+x=/etc/smack/permissive-buxton
+sed -i "s:[[]Configuration]:&\nSmackPermissive=$x:" /etc/buxton.conf
+echo 1 > $x
+chsmack -a -d $x /etc/buxton.conf
+
+# 2. replace xwalk-launcher
+# -------------------------
+# replace the crosswalk-launcher that is used to launch
+# widget applications
+rm -rf /usr/bin/xwalk-launcher
+cat << EOC > /usr/bin/xwalk-launcher
+#!/bin/sh
+
+export USE_OZONE_WAYLAND_VKB=1
+export OZONE_WAYLAND_USE_XDG_SHELL='defined'
+
+if echo "\$*" | grep -q _AUL_; then
+  set -- \$(sed s/User::App::// /proc/\$\$/attr/current)
+fi
+/usr/lib64/xwalk/xwalk --process-per-site --disable-shared-process-mode --disable-setuid-sandbox --external-extensions-path=/usr/lib64/tizen-extensions-crosswalk "\$@"
+EOC
+chmod +x /usr/bin/xwalk-launcher
+chsmack -a -d /usr/bin/xwalk-launcher
+
+# 3. some setup
+#--------------
+# Set the execution Smack label on some of the
+# items of the framework
+chsmack -e System /usr/bin/pkgcmd
+chsmack -e System /usr/bin/wgt-backend
+chsmack -e System /usr/bin/mediadb-update
+chsmack -e System /usr/bin/preinstall-qt-demos.sh
+chsmack -e System /usr/bin/pkg_clearcache
+chsmack -e System /usr/bin/pkg-config
+chsmack -e System /usr/bin/pkg_createdb_user
+chsmack -e System /usr/bin/pkg_getsize
+chsmack -e System /usr/bin/pkg_initdb
+chsmack -e System /usr/bin/pkgmgr-server
+chsmack -e System /usr/bin/pkg_privilege
+chsmack -e System /usr/bin/pkg_syncdb_user
+chsmack -e System /usr/bin/pkgcmd
+chsmack -e System /usr/bin/pkg_createdb
+chsmack -e System /usr/bin/pkgdata
+chsmack -e System /usr/bin/pkginfo
+chsmack -e System /usr/bin/pkg_initdb_user
+chsmack -e System /usr/bin/pkgmgr_tool
+chsmack -e System /usr/bin/pkg_syncdb
+
+TimeoutSec=
+# ?. temporarily deactivation of deviced
+#sed -i 's:ExecStart *=.*:#&\nExecStart=/usr/bin/true:' /usr/lib/systemd/system/deviced-pre.service
+sed -i 's:ExecStart *=.*:#&\nExecStart=/usr/bin/true:' /usr/lib/systemd/system/deviced.service
+sed -i 's:ExecStart *=.*:#&\nExecStart=/usr/bin/true:' /usr/lib/systemd/system/zbooting-done.service
+
