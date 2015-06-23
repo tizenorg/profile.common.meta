@@ -94,6 +94,7 @@ Wayland:
         - common-crosswalk
         - generic-qt5
         - common-qt5
+        - common-adaptation-2015Q2
     Repos: []
 
 X11:
@@ -127,4 +128,5 @@ X11:
         - common-crosswalk
         - generic-qt5
         - common-qt5
+        - common-adaptation-2015Q2
     Repos: []
