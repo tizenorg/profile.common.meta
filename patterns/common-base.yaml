@@ -2,6 +2,6 @@ Summary: Common Base
 Description: Common Base
 Name: common-base
 Packages:
-- buxton
+- buxton2
 - cynara
 - security-manager
