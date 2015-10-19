@@ -6,3 +6,7 @@ Packages:
 - ofono
 - neard
 - neardal
+- capi-security-privilege-manager
+- privilege-checker
+- privilege-info
+- vconf-internal-keys

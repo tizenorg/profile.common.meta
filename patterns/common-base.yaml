@@ -5,3 +5,5 @@ Packages:
 - buxton2
 - cynara
 - security-manager
+- cert-svc
+- capi-base-utils
