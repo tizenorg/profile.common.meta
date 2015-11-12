@@ -2,7 +2,7 @@
 echo "#################### common-wayland.post ##################"
 
 # add users to display group
-for user in alice bob carol guest developer; do
+for user in alice bob carol guest developer owner; do
 	if generic_base_user_exists $user; then
 		/usr/sbin/groupmod -A $user display
 	fi

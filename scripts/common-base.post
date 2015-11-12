@@ -2,6 +2,10 @@
 echo "############### common-base.post ################"
 
 ######### multiuser mode: create additional users and fix their homedirs
+if ! generic_base_user_exists owner; then
+	gum-utils --offline --add-user --username=owner --usertype=admin --usecret=tizen
+fi
+
 for user in alice bob carol guest; do
 	if ! generic_base_user_exists $user; then
 		gum-utils --offline --add-user --username="$user" --usertype=normal --usecret=tizen
