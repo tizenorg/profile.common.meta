@@ -8,3 +8,11 @@ Mic2Options: -f loop --pack-to=@NAME@.tar.gz
 FileName: common-x11-3parts-armv7l-odroidu3
 Repos:
     - common-x11_armv7l
+ExtraPackages:
+    - system-plugin-u3
+    - model-config-xu3
+    - mmfw-sysconf-target-u3
+    - libtbm-exynos4412
+    - audio-hal-max98090
+    - xf86-misc-exynos4412
+    - xf86-misc-odroidu3
