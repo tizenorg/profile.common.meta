@@ -8,3 +8,5 @@ Packages:
 - weston-clients
 - weston-common-tz-launcher
 - desktop-skin
+- libwayland-tbm-client
+- libwayland-tbm-server
