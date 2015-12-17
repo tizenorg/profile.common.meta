@@ -13,5 +13,4 @@ ExtraPackages:
     - mmfw-sysconf-target-u3
     - libtbm-exynos4412
     - audio-hal-max98090
-    - xf86-misc-exynos4412
     - xf86-misc-odroidu3
