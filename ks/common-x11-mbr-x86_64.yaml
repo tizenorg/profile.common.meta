@@ -1,7 +1,7 @@
 Name: common-x11-mbr-x86_64
 Architecture: x86_64
 Schedule: "*"
-Active: True
+Active: False
 Platform: X11
 InstallerFrameworkPlugins:
     - bootloader

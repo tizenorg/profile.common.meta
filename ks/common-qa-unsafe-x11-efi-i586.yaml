@@ -1,7 +1,7 @@
 Name: common-qa-unsafe-x11-efi-i586
 Architecture: ia32
 Schedule: "*"
-Active: True
+Active: False
 Platform: X11
 InstallerFrameworkPlugins:
     - bootloader
