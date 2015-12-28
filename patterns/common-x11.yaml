@@ -1,8 +1,0 @@
-Summary: Common X11
-Description: Common X11
-Name: common-x11
-Packages:
-- tlm-config-common
-- x11-common
-- desktop-skin
-- terminology
