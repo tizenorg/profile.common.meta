@@ -2,5 +2,4 @@ Summary: Common Desktop Applications
 Description: Common Desktop Applications
 Name: common-desktop-applications
 Packages:
-- org.tizen.calculator
 - elementary-tools
