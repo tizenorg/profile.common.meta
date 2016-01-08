@@ -8,8 +8,5 @@ Mic2Options: -f loop --pack-to=@NAME@.tar.gz
 FileName: common-wayland-3parts-armv7l-odroidu3
 Repos:
     - common-wayland_armv7l
-ExtraPackages:
-    - system-plugin-u3
-    - mmfw-sysconf-target-u3
-    - libtbm-exynos4412
-    - audio-hal-max98090
+Groups:
+    - Common Adaptation Odroid
