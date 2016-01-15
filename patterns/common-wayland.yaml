@@ -2,7 +2,7 @@ Summary: Common Wayland
 Description: Common Wayland
 Name: common-wayland
 Packages:
-- tlm-config-common
+- tlm-config-common-singleseat
 - weston-common
 - weston-common-config
 - weston-clients
