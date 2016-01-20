@@ -2,8 +2,5 @@ Summary: Common Base
 Description: Common Base
 Name: common-base
 Packages:
-- buxton2
-- cynara
 - security-manager
-- cert-svc
 - capi-base-utils
