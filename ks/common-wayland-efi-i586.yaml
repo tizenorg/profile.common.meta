@@ -17,3 +17,5 @@ Groups:
 PostScripts:
     - generic-multimedia-intel
     - generic-setup-boot
+ExtraPackages:
+    - mesa
