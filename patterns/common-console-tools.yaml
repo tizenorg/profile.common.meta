@@ -1,0 +1,9 @@
+Summary: Common Console Tools
+Description: Common Console Tools
+Name: common-console-tools
+Packages:
+- openssh
+- strace
+- tree
+- vim
+- usbutils
