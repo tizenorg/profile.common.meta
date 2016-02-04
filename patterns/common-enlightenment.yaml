@@ -1,0 +1,5 @@
+Summary: Common Enlightenment
+Description: Common Enlightenment
+Name: common-enlightenment
+Packages:
+- e-tizen-data
