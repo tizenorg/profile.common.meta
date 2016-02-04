@@ -3,10 +3,7 @@ Description: Common Wayland
 Name: common-wayland
 Packages:
 - tlm-config-common-singleseat
-- weston-common
-- weston-common-config
-- weston-clients
-- weston-common-tz-launcher
 - desktop-skin
 - libwayland-tbm-client
 - libwayland-tbm-server
+- xkb-tizen-data
