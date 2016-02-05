@@ -80,6 +80,7 @@ Wayland:
         - Common Crosswalk
         - Generic Qt5
         - Common Qt5
+        - Common EFL
         - Common Enlightenment
     PostScripts:
         - generic-wayland

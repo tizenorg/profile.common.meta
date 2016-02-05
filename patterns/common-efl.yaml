@@ -1,0 +1,7 @@
+Summary: Common EFL
+Description: Common EFL
+Name: common-efl
+Packages:
+- efl-config
+- efl-misc
+- efl-modules
