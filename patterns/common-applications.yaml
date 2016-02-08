@@ -1,0 +1,5 @@
+Summary: Common Applications
+Description: Common Applications
+Name: common-applications
+Packages:
+- org.tizen.screen-reader
