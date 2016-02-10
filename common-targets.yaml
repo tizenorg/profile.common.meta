@@ -4,6 +4,7 @@ Targets:
         Images:
             - common-installer-mbr-i586.yaml
             - common-wayland-mbr-i586.yaml
+            - common-wayland-efi-i586.yaml
 
     -   Name: emulator32-wayland
         Images:
