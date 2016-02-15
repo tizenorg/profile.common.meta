@@ -9,3 +9,4 @@ FileName: common-boot-arm64-juno
 Group: Common Boot Juno
 Repos:
     - common-wayland_arm64
+    - base_arm64
