@@ -11,6 +11,7 @@ FileName: common-qa-unsafe-wayland-mbr-i586
 Kernel: kernel-profile-common
 Repos:
     - common-wayland_i586
+    - base_ia32
 Groups:
     - Generic Multimedia Intel
     - Generic Automated QA Tools

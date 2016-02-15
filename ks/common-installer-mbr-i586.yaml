@@ -11,6 +11,7 @@ FileName: common-installer-mbr-i586
 Kernel: kernel-profile-common
 Repos:
     - common-wayland_i586
+    - base_ia32
 ExtraPackages:
     - system-installer
 Groups:

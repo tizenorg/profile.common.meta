@@ -14,6 +14,7 @@ FileName: common-qa-unsafe-minimal-mbr-i586
 Kernel: kernel-profile-common
 Repos:
     - common-wayland_i586
+    - base_ia32
 Groups:
     - Generic Automated QA Tools
     - Generic QA Tools

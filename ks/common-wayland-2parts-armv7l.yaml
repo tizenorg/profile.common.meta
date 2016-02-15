@@ -9,3 +9,4 @@ FileName: common-wayland-2parts-armv7l
 Kernel: kernel-profile-common
 Repos:
     - common-wayland_armv7l
+    - base_arm

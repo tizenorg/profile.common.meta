@@ -11,6 +11,7 @@ FileName: common-minimal-efi-x86_64
 Kernel: kernel-profile-common
 Repos:
     - common-wayland_x86_64
+    - base_x86_64
 Groups:
     - Generic Setup Boot
 PostScripts:

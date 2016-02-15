@@ -18,3 +18,23 @@ Repositories:
     -   Name: common-emulator-wayland_i586
         Url:  http://download.tizen.org/snapshots/tizen/common/@BUILD_ID@/repos/emulator32-wayland/packages/
         Options: --ssl_verify=no
+
+    -   Name: base_ia32
+        Url:  http://download.tizen.org/snapshots/tizen/base/latest/repos/ia32/packages/
+        Options: --ssl_verify=no
+
+    -   Name: base_x86_64
+        Url:  http://download.tizen.org/snapshots/tizen/base/latest/repos/x86_64/packages/
+        Options: --ssl_verify=no
+
+    -   Name: base_arm
+        Url:  http://download.tizen.org/snapshots/tizen/base/latest/repos/arm/packages/
+        Options: --ssl_verify=no
+
+    -   Name: base_arm64
+        Url:  http://download.tizen.org/snapshots/tizen/base/latest/repos/arm64/packages/
+        Options: --ssl_verify=no
+
+    -   Name: base_emulator32
+        Url:  http://download.tizen.org/snapshots/tizen/base/latest/repos/emulator32/packages/
+        Options: --ssl_verify=no

@@ -11,6 +11,7 @@ Mic2Options: -f loop --pack-to=@NAME@.tar.gz
 FileName: common-emulator-wayland-3parts-i586
 Repos:
     - common-emulator-wayland_i586
+    - base_emulator32
 ExtraPackages:
     - sdbd
     - system-plugin-emulator

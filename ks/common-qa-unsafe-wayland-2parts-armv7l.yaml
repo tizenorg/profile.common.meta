@@ -9,6 +9,7 @@ FileName: common-qa-unsafe-wayland-2parts-armv7l
 Kernel: kernel-profile-common
 Repos:
     - common-wayland_armv7l
+    - base_arm
 Groups:
     - Generic Automated QA Tools
     - Generic QA Tools

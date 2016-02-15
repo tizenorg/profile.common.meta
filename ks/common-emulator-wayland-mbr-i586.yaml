@@ -12,6 +12,7 @@ FileName: common-emulator-wayland-mbr-i586
 Kernel: kernel-common-i386-emulator
 Repos:
     - common-emulator-wayland_i586
+    - base_emulator32
 ExtraPackages:
     - sdbd
     - system-plugin-emulator

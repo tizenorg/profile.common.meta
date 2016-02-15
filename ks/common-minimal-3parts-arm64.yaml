@@ -8,3 +8,4 @@ Mic2Options: -f loop --pack-to=@NAME@.tar.gz
 FileName: common-minimal-3parts-arm64
 Repos:
     - common-wayland_aarch64
+    - base_arm64

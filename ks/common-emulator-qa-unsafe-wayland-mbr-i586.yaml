@@ -12,6 +12,7 @@ FileName: common-emulator-qa-unsafe-wayland-mbr-i586
 Kernel: kernel-common-i386-emulator
 Repos:
     - common-emulator-wayland_i586
+    - base_emulator32
 Groups:
     - Generic Multimedia Intel
     - Generic Automated QA Tools
