@@ -3,3 +3,9 @@ Description: Common Enlightenment
 Name: common-enlightenment
 Packages:
 - e-tizen-data
+- e-mod-tizen-wm-policy
+- e-mod-tizen-devicemgr
+- e-mod-tizen-keyrouter
+- e-mod-tizen-eom
+- e-mod-tizen-processmgr
+- e-mod-tizen-wl-textinput
