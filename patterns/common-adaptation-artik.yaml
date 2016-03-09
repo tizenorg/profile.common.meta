@@ -1,0 +1,138 @@
+Summary: Common Adaptation Artik
+Description: Common Adaptation Artik
+Name: common-adaptation-artik
+Packages:
+#From Common Adaptation Odroid U3
+- libtbm-exynos
+- libtdm-exynos
+- audio-hal-max98090
+- system-plugin-u3
+- mmfw-sysconf-target-u3
+- libomxil-e54xx
+#From Generic Adaptation
+- linux-firmware
+- system-plugin
+#From Generic Applications
+- ail
+- ca-certificates
+#From Generic Bluetooth
+- bluez
+- bluetooth-frwk-core
+- bluetooth-frwk-service
+- bluetooth-share
+- bluetooth-tools-no-firmware
+- obexd
+#From Generic Crosswalk
+- crosswalk-tizen
+#From Generic Desktop Applications
+- emotion
+#From Generic Middleware
+- buxton2
+- resourced
+- murphy
+- key-manager
+- key-manager-pam-plugin
+- libkey-manager-common
+- libkey-manager-client
+- cynara
+- libcynara-creds-commons
+- libcynara-creds-dbus
+- libcynara-creds-gdbus
+- libcynara-creds-socket
+- cert-svc
+- security-privilege-manager
+- privilege-checker
+- privilege-info
+- contacts-service2
+- calendar-service
+- cairo
+- csr-framework
+- elm-misc
+- efl-theme-tizen-hd
+- libprivilege-control-conf
+- pkgmgr-server
+- pkgmgr-tool
+- sqlite3
+- sdbd
+- amd
+- voice-control
+- voice-control-elm
+- vc-engine-default
+- capi-maps-service
+- appcore-agent
+- data-control
+- ttrace
+- stt
+- libttssmt
+- eventsystem
+- vconf-internal-keys
+- toybox
+- toybox-symlinks-klogd
+- toybox-symlinks-sysklogd
+- toybox-symlinks-dhcp
+- toybox-symlinks-dhcpd
+- xdelta3
+- launchpad
+- drm-service-core-tizen
+- nghttp2
+- pubkey-pinning
+- crash-worker
+- app-installers
+- tpk-backend
+- wgt-backend
+#From Generic Multimedia
+- alsa-utils
+- pulseaudio
+- pulseaudio-locale
+- pulseaudio-module-bluetooth
+- pulseaudio-modules-tizen
+- pulseaudio-utils
+- gst-plugins-bad
+- gst-plugins-base
+- gst-plugins-good
+- gstreamer
+- gstreamer-utils
+#From Generic Qt5
+- qt-tizen-full
+#From Generic Wayland
+- cantarell-fonts
+- dejavu-fonts
+- xkeyboard-config
+- tizen-branding-default
+#From Common Wayland
+- tlm-config-common-singleseat
+- desktop-skin
+- libwayland-tbm-client
+- libwayland-tbm-server
+- xkb-tizen-data
+#From Common Middleware
+- model-config-generic
+- ofono
+- neard
+- neardal
+- tzsh
+#From Common Applications
+- org.tizen.screen-reader
+- starter
+- boot-animation
+#From Common Desktop Applications
+- elementary-tools
+- org.tizen.homescreen
+- org.tizen.homescreen-efl
+#From Common Crosswalk
+- wrt-widgets
+- wgt-backend
+#From Common Qt5
+- qt-tizen-demo
+#From Common EFL
+- efl-config
+- efl-misc
+- efl-modules
+#From Common Enlightenment
+- e-tizen-data
+- e-mod-tizen-wm-policy
+- e-mod-tizen-devicemgr
+- e-mod-tizen-keyrouter
+- e-mod-tizen-eom
+- e-mod-tizen-processmgr
+- e-mod-tizen-wl-textinput
