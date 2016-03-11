@@ -47,7 +47,6 @@ Packages:
 - calendar-service
 - cairo
 - csr-framework
-- elm-misc
 - efl-theme-tizen-hd
 - libprivilege-control-conf
 - pkgmgr-server
