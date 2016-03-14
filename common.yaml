@@ -82,6 +82,15 @@ Boot-Juno:
         - Common Boot Juno
     Repos: []
 
+Boot-Artik:
+    Part: common-mbr-boot
+    Desktop: None
+    SaveRepos: False
+    UserGroups: "audio,video"
+    Groups:
+        - Common Boot Artik
+    Repos: []
+
 Wayland:
     Part: common-mbr
     UserGroups: "audio,video"
