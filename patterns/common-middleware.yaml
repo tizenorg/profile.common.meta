@@ -7,3 +7,6 @@ Packages:
 - neard
 - neardal
 - tzsh
+- auth-fw
+- libauth-fw-client
+- libauth-fw-client-admin
