@@ -1,0 +1,15 @@
+Name: common-boot-armv7l-artik
+Architecture: armv7l
+Schedule: "*"
+Active: True
+Platform: Boot-Artik
+Part: common-mbr-boot
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz
+FileName: common-boot-armv7l-artik
+Group: Common Boot Artik
+Attachment:
+    - /var/tmp/u-boot/u-boot-mmc.bin
+    - /var/tmp/u-boot/params.bin
+Repos:
+    - common-wayland_armv7l
+    - base_arm

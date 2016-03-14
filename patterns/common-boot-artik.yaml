@@ -1,0 +1,7 @@
+Summary: Common Boot Artik
+Description: Common Boot Artik
+Name: common-boot-artik
+Packages:
+- arm-artik-linux-kernel
+- arm-artik-linux-kernel-module
+- u-boot
