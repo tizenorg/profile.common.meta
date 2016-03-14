@@ -10,7 +10,7 @@ Default:
     DefaultUser: guest
     DefaultUserPass: tizen
     BootLoader: True
-    BootloaderAppend: "rw vga=current splash rootwait rootfstype=ext4 plymouth.enable=0"
+    BootloaderAppend: "rw vga=current splash rootwait rootfstype=ext4"
     BootloaderTimeout: 3
     BootloaderOptions: '--ptable=gpt --menus="install:Wipe and Install:systemd.unit=system-installer.service:test"'
     StartX: False
@@ -61,7 +61,7 @@ Artik:
 
 Installer:
     Part: common-mbr
-    BootloaderAppend: "rw vga=current quiet splash rootwait rootfstype=ext4 plymouth.enable=0"
+    BootloaderAppend: "rw vga=current quiet splash rootwait rootfstype=ext4"
     Repos: []
 
 Boot-Odroidu3:
