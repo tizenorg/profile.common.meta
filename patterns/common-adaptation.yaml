@@ -4,3 +4,5 @@ Name: common-adaptation
 Packages:
 - meta-generic-adaptation
 - libtdm-drm
+- libtbm-dumb
+
