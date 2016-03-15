@@ -88,7 +88,8 @@ Boot-Artik:
     SaveRepos: False
     UserGroups: "audio,video"
     Groups:
-        - Common Boot Artik
+        - Common Boot Artik 5
+        - Common Boot Artik 10
     Repos: []
 
 Wayland:
