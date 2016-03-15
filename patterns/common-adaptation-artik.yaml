@@ -97,7 +97,6 @@ Packages:
 - cantarell-fonts
 - dejavu-fonts
 - xkeyboard-config
-- tizen-branding-default
 #From Common Wayland
 - tlm-config-common-singleseat
 - desktop-skin
