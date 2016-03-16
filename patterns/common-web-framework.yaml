@@ -1,0 +1,5 @@
+Summary: Common Web Framework
+Description: Common Web Framework
+Name: common-web-framework
+Packages:
+- libwebsockets

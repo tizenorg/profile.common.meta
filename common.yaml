@@ -112,6 +112,7 @@ Wayland:
         - Common Qt5
         - Common EFL
         - Common Enlightenment
+        - Common Web Framework
     PostScripts:
         - generic-wayland
         - common-wayland
