@@ -82,14 +82,22 @@ Boot-Juno:
         - Common Boot Juno
     Repos: []
 
-Boot-Artik:
+Boot-Artik10:
+    Part: common-mbr-boot
+    Desktop: None
+    SaveRepos: False
+    UserGroups: "audio,video"
+    Groups:
+        - Common Boot Artik 10
+    Repos: []
+
+Boot-Artik5:
     Part: common-mbr-boot
     Desktop: None
     SaveRepos: False
     UserGroups: "audio,video"
     Groups:
         - Common Boot Artik 5
-        - Common Boot Artik 10
     Repos: []
 
 Wayland:
