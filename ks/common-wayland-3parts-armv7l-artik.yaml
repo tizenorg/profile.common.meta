@@ -1,11 +1,11 @@
-Name: common-wayland-3parts-armv7l-artik5
+Name: common-wayland-3parts-armv7l-artik
 Architecture: armv7l
 Schedule: "*"
 Active: True
 Platform: Artik
 Part: common-mbr-3parts
 Mic2Options: -f loop --pack-to=@NAME@.tar.gz
-FileName: common-wayland-3parts-armv7l-artik5
+FileName: common-wayland-3parts-armv7l-artik
 Repos:
     - common-wayland_armv7l
     - base_arm
