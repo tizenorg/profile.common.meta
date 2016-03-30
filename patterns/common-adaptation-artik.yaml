@@ -66,8 +66,6 @@ Packages:
 - eventsystem
 - vconf-internal-keys
 - toybox
-- toybox-symlinks-klogd
-- toybox-symlinks-sysklogd
 - toybox-symlinks-dhcp
 - toybox-symlinks-dhcpd
 - xdelta3
