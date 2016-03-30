@@ -4,4 +4,4 @@ Name: common-boot-artik5
 Packages:
 - arm-artik5-linux-kernel
 - arm-artik5-linux-kernel-modules
-- u-boot
+- u-boot-artik

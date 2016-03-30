@@ -4,4 +4,4 @@ Name: common-boot-artik10
 Packages:
 - arm-artik10-linux-kernel
 - arm-artik10-linux-kernel-modules
-- u-boot
+- u-boot-artik10
