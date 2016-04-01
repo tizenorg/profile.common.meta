@@ -111,6 +111,7 @@ Packages:
 - org.tizen.screen-reader
 - starter
 - boot-animation
+- org.tizen.setting
 #From Common Desktop Applications
 - elementary-tools
 - org.tizen.homescreen
