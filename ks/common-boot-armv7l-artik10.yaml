@@ -3,13 +3,15 @@ Architecture: armv7l
 Schedule: "*"
 Active: True
 Platform: Boot-Artik10
-Part: common-mbr-boot
+Part: common-artik-mbr-boot
 Mic2Options: -f loop --pack-to=@NAME@.tar.gz
 FileName: common-boot-armv7l-artik10
 Group: Common Boot Artik 10
 Attachment:
-    - /var/tmp/u-boot/u-boot-mmc.bin
-    - /var/tmp/u-boot/params.bin
+    - /boot/exynos3250-artik5.dtb
+    - /boot/zImage
+    - /boot/u-boot/params.bin
+    - /boot/u-boot/u-boot.bin
 Repos:
     - common-wayland_armv7l
     - base_arm

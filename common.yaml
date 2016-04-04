@@ -83,7 +83,7 @@ Boot-Juno:
     Repos: []
 
 Boot-Artik10:
-    Part: common-mbr-boot
+    Part: common-artik-mbr-boot
     Desktop: None
     SaveRepos: False
     UserGroups: "audio,video"
@@ -92,7 +92,7 @@ Boot-Artik10:
     Repos: []
 
 Boot-Artik5:
-    Part: common-mbr-boot
+    Part: common-artik-mbr-boot
     Desktop: None
     SaveRepos: False
     UserGroups: "audio,video"
