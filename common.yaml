@@ -18,22 +18,9 @@ Default:
     SaveRepos: False
     UserGroups: "audio,video"
     Groups:
-        - Generic Base
-        - Common Base
-        - Generic Console Tools
-        - Common Console Tools
-        - Generic Packaging
-        - Common Packaging
         - Generic Adaptation
         - Common Adaptation
-    PostScripts:
-        - generic-base
-        - common-base
-        - generic-console-tools
-        - generic-packaging
-        - common-packaging
-        - generic-adaptation
-        - common-adaptation
+    PostScripts: []
     NoChrootScripts:
         - buildname
 
@@ -104,6 +91,12 @@ Wayland:
     Part: common-mbr
     UserGroups: "audio,video"
     Groups:
+        - Generic Base
+        - Common Base
+        - Generic Console Tools
+        - Common Console Tools
+        - Generic Packaging
+        - Common Packaging
         - Generic Wayland
         - Common Wayland
         - Generic Middleware
@@ -122,6 +115,13 @@ Wayland:
         - Common Enlightenment
         - Common Web Framework
     PostScripts:
+        - generic-base
+        - common-base
+        - generic-console-tools
+        - generic-packaging
+        - common-packaging
+        - generic-adaptation
+        - common-adaptation
         - generic-wayland
         - common-wayland
         - generic-middleware
