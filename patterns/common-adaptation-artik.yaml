@@ -170,3 +170,10 @@ Packages:
 - oauth2
 - service-adaptor
 - vpnc
+#From TRE-131
+- libmm-player
+- mmsvc-player
+- gst-plugins-ugly
+- gst-plugins-tizen
+- iotivity
+- nodejs
