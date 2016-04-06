@@ -1,0 +1,7 @@
+Summary: Common Boot Odroid XU3
+Description: Common Boot Odroid XU3
+Name: common-boot-odroid-xu3
+Packages:
+- arm-odroidxu3-linux-kernel
+- arm-odroidxu3-linux-kernel-modules
+- u-boot-xu3

@@ -1,0 +1,15 @@
+Name: common-boot-armv7l-odroidxu3
+Architecture: armv7l
+Schedule: "*"
+Active: True
+Platform: Boot-Odroidxu3
+Part: common-mbr-boot
+Mic2Options: -f loop --pack-to=@NAME@.tar.gz
+FileName: common-boot-armv7l-odroidxu3
+Group: Common Boot Odroid XU3
+Attachment:
+    - /var/tmp/u-boot-xu3/u-boot-mmc.bin
+    - /var/tmp/u-boot-xu3/params.bin
+Repos:
+    - common-wayland_armv7l
+    - base_arm
