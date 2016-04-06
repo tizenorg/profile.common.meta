@@ -21,6 +21,7 @@ Targets:
     -   Name: arm-wayland
         Images:
             - common-boot-armv7l-odroidu3.yaml
+            - common-boot-armv7l-odroidxu3.yaml
             - common-boot-armv7l-artik5.yaml
             - common-boot-armv7l-artik10.yaml
             - common-wayland-2parts-armv7l.yaml

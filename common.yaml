@@ -73,6 +73,15 @@ Boot-Odroidu3:
         - Common Boot Odroid U3
     Repos: []
 
+Boot-Odroidxu3:
+    Part: common-mbr-boot
+    Desktop: None
+    SaveRepos: False
+    UserGroups: "audio,video"
+    Groups:
+        - Common Boot Odroid XU3
+    Repos: []
+
 Boot-Juno:
     Part: common-mbr-boot
     Desktop: None
