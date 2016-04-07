@@ -188,3 +188,9 @@ Packages:
 - org.tizen.menu-screen
 #From TRE-145
 - efl-theme-tizen
+#From TRE-146
+- default-fonts-sdk
+- default-fonts-fc-sdk
+- privacy-manager-server
+- privacy-manager-client
+- libcall-manager
