@@ -9,3 +9,5 @@ FileName: common-wayland-3parts-arm64
 Repos:
     - common-wayland_aarch64
     - base_arm64
+Groups:
+    - Common Adaptation Intel

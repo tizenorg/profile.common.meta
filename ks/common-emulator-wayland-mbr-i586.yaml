@@ -17,6 +17,7 @@ ExtraPackages:
     - sdbd
     - system-plugin-emulator
 Groups:
+    - Common Adaptation Intel
     - Generic Multimedia Intel
     - Generic Setup Boot Bios
 PostScripts:

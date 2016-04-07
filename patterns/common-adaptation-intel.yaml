@@ -1,0 +1,10 @@
+Summary: Common Adaptation Intel
+Description: Common Adaptation Intel
+Name: common-adaptation-intel
+Packages:
+- libtdm-drm
+- libtbm-dumb
+- audio-hal-max98090
+- system-plugin-u3
+- mmfw-sysconf-target-u3
+- libomxil-e54xx
