@@ -177,3 +177,13 @@ Packages:
 - gst-plugins-tizen
 - iotivity
 - nodejs
+#From TRE-133
+- dlogutil
+- chromium-efl
+- webapi-plugins
+- browser-provider
+- cordova-api
+- jsnative
+- tizen-locale
+- gst-libav
+- org.tizen.menu-screen
