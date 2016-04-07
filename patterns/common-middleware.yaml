@@ -14,3 +14,5 @@ Packages:
 - libboost_regex1_57_0
 - libboost_date_time1_57_0
 - efl-theme-tizen-common
+- privacy-manager-server
+- privacy-manager-client

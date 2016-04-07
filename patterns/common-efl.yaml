@@ -5,3 +5,5 @@ Packages:
 - efl-config
 - efl-misc
 - efl-modules
+- default-fonts-sdk
+- default-fonts-fc-sdk
