@@ -8,3 +8,8 @@ Packages:
 - system-plugin-u3
 - mmfw-sysconf-target-u3
 - libomxil-e54xx
+- default-fonts-sdk
+- default-fonts-fc-sdk
+- privacy-manager-server
+- privacy-manager-client
+- libcall-manager
