@@ -186,3 +186,5 @@ Packages:
 - tizen-locale
 - gst-libav
 - org.tizen.menu-screen
+#From TRE-145
+- efl-theme-tizen
