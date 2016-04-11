@@ -193,3 +193,4 @@ Packages:
 - default-fonts-fc-sdk
 - privacy-manager-server
 - privacy-manager-client
+- org.tizen.browser
