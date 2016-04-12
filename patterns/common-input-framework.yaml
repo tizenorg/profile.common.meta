@@ -1,0 +1,16 @@
+Summary: Common Input Framework
+Description: Common Input Framework
+Name: common-input-framework
+Packages:
+- isf
+- libscl-ui
+- ise-default
+- ise-engine-anthy
+- ise-engine-default
+- ise-engine-hangul
+- ise-engine-sunpinyin
+- ise-engine-tables
+- anthy
+- libhangul
+- capi-ui-inputmethod
+- org.tizen.inputmethod-setting

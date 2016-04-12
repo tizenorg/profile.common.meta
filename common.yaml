@@ -130,6 +130,7 @@ Wayland:
         - Common EFL
         - Common Enlightenment
         - Common Web Framework
+        - Common Input Framework
     PostScripts:
         - generic-wayland
         - common-wayland
