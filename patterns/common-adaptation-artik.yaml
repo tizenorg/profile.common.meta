@@ -88,8 +88,6 @@ Packages:
 - gst-plugins-good
 - gstreamer
 - gstreamer-utils
-#From Generic Qt5
-- qt-tizen-full
 #From Generic Wayland
 - cantarell-fonts
 - dejavu-fonts
@@ -118,8 +116,6 @@ Packages:
 #From Common Crosswalk
 - wrt-widgets
 - wgt-backend
-#From Common Qt5
-- qt-tizen-demo
 #From Common EFL
 - efl-config
 - efl-misc
@@ -193,7 +189,6 @@ Packages:
 - default-fonts-fc-sdk
 - privacy-manager-server
 - privacy-manager-client
-- org.tizen.browser
 #From TRE-170 common input FW
 - isf
 - libscl-ui
