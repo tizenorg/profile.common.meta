@@ -205,3 +205,5 @@ Packages:
 #From TRE-146
 - call-manager
 - libcall-manager
+#From TRE-123
+- org.tizen.setting
