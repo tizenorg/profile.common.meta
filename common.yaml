@@ -131,6 +131,7 @@ Wayland:
         - Common Enlightenment
         - Common Web Framework
         - Common Input Framework
+        - Common Telephony
     PostScripts:
         - generic-wayland
         - common-wayland

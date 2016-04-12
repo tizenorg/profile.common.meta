@@ -1,0 +1,7 @@
+Summary: Common Telephony
+Description: Common Telephony
+Name: common-telephony
+Packages:
+- call-manager
+- libcall-manager
+
