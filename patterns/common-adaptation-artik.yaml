@@ -202,3 +202,6 @@ Packages:
 - libhangul
 - capi-ui-inputmethod
 - org.tizen.inputmethod-setting
+#From TRE-146
+- call-manager
+- libcall-manager
