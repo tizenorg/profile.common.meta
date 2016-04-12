@@ -194,3 +194,18 @@ Packages:
 - privacy-manager-server
 - privacy-manager-client
 - org.tizen.browser
+#From TRE-170 common input FW
+- isf
+- libscl-ui
+- ise-default
+- ise-engine-anthy
+- ise-engine-default
+- ise-engine-hangul
+- ise-engine-sunpinyin
+- ise-engine-tables
+- anthy
+- libhangul
+- capi-ui-inputmethod
+- capi-ui-inputmethod-manager
+- org.tizen.inputmethod-setting
+- ise-engine-tables-zh
