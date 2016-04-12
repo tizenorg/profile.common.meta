@@ -194,3 +194,5 @@ Packages:
 - privacy-manager-server
 - privacy-manager-client
 - org.tizen.browser
+#From TRE-123
+- org.tizen.setting
