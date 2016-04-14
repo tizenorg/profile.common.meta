@@ -462,4 +462,5 @@ Packages:
 - org.tizen.ode
 - org.tizen.dpm-syspopup
 - org.tizen.zone-setup-wizard
-
+#From TRE-168
+- app2sd
