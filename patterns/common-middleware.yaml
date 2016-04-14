@@ -16,3 +16,6 @@ Packages:
 - efl-theme-tizen-common
 - privacy-manager-server
 - privacy-manager-client
+- device-policy-manager
+- dpm-pam-zone
+- libdpm
