@@ -464,3 +464,8 @@ Packages:
 - org.tizen.zone-setup-wizard
 #From TRE-168
 - app2sd
+#From TRE-178
+- mmsvc-camera
+- mmsvc-recorder
+- wifi-efl-ug
+- ug-bluetooth-efl
