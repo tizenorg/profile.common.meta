@@ -19,3 +19,4 @@ Packages:
 - device-policy-manager
 - dpm-pam-zone
 - libdpm
+- app2sd
