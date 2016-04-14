@@ -455,3 +455,11 @@ Packages:
 - zip
 - zlib
 - zypper
+#From TRE-71
+- device-policy-manager
+- dpm-pam-zone
+- libdpm
+- org.tizen.ode
+- org.tizen.dpm-syspopup
+- org.tizen.zone-setup-wizard
+

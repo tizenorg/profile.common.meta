@@ -8,3 +8,6 @@ Packages:
 - org.tizen.menu-screen
 - data-provider-master
 - org.tizen.setting
+- org.tizen.ode
+- org.tizen.dpm-syspopup
+- org.tizen.zone-setup-wizard
