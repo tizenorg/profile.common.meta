@@ -8,3 +8,5 @@ Packages:
 - system-plugin-u3
 - mmfw-sysconf-target-u3
 - libomxil-e54xx
+- libwayland-egl
+- libtpl-egl
