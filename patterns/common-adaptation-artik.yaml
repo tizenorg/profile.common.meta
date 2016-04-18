@@ -224,3 +224,5 @@ Packages:
 #From TRE-196
 - dlogutil
 - tizen-locale
+#From TRE-198
+- data-provider-master
