@@ -221,3 +221,6 @@ Packages:
 - mmsvc-recorder
 - wifi-efl-ug
 - ug-bluetooth-efl
+#From TRE-196
+- dlogutil
+- tizen-locale

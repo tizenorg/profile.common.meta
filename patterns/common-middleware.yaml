@@ -20,3 +20,5 @@ Packages:
 - dpm-pam-zone
 - libdpm
 - app2sd
+- dlogutil
+- tizen-locale
