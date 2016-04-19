@@ -7,3 +7,4 @@ Packages:
 - efl-modules
 - default-fonts-sdk
 - default-fonts-fc-sdk
+- elementary-locale
