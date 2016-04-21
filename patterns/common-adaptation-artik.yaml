@@ -235,3 +235,6 @@ Packages:
 - bluez-test
 - org.tizen.bt-syspopup
 - efl-assist
+#From TRE-207
+- libnsd-dns
+- libnsd-ssdp

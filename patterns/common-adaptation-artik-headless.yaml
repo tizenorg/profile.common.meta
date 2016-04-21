@@ -460,3 +460,6 @@ Packages:
 - gssdp
 - capi-network-bluetooth-test
 - bluez-test
+#From TRE-207
+- libnsd-dns
+- libnsd-ssdp

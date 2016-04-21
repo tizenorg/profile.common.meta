@@ -10,3 +10,8 @@ Packages:
 - libomxil-e54xx
 - libwayland-egl
 - libtpl-egl
+#From TRE-207
+- mdnsresponder
+- gssdp
+- libnsd-dns
+- libnsd-ssdp
