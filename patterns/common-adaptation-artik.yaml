@@ -228,3 +228,10 @@ Packages:
 - data-provider-master
 #From TRE-190
 - elementary-locale
+#From TRE-212
+- mdnsresponder
+- gssdp
+- capi-network-bluetooth-test
+- bluez-test
+- org.tizen.bt-syspopup
+- efl-assist

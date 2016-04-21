@@ -455,3 +455,8 @@ Packages:
 - zip
 - zlib
 - zypper
+#From TRE-212
+- mdnsresponder
+- gssdp
+- capi-network-bluetooth-test
+- bluez-test
