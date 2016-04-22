@@ -22,3 +22,8 @@ Packages:
 - app2sd
 - dlogutil
 - tizen-locale
+#From TRE-207
+- mdnsresponder
+- gssdp
+- libnsd-dns-sd
+- libnsd-ssdp
