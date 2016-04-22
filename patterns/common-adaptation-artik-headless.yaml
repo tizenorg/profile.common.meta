@@ -184,7 +184,6 @@ Packages:
 - libcynara-creds-gdbus
 - libcynara-creds-socket
 - libcynara-session
-- libdbus
 - libdeviced
 - libdevice-node
 - libdlog
@@ -463,3 +462,5 @@ Packages:
 #From TRE-207
 - libnsd-dns-sd
 - libnsd-ssdp
+#From TRE-216
+- dbus-libs
