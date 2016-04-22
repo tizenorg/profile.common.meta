@@ -236,5 +236,5 @@ Packages:
 - org.tizen.bt-syspopup
 - efl-assist
 #From TRE-207
-- libnsd-dns
+- libnsd-dns-ds
 - libnsd-ssdp
