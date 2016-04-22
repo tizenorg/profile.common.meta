@@ -14,3 +14,5 @@ Packages:
 - libhangul
 - capi-ui-inputmethod
 - org.tizen.inputmethod-setting
+#From TRE-214
+- ise-engine-unikey

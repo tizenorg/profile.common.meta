@@ -238,3 +238,5 @@ Packages:
 #From TRE-207
 - libnsd-dns-sd
 - libnsd-ssdp
+#From TRE-214
+- ise-engine-unikey
