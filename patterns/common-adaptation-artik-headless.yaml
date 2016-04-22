@@ -461,5 +461,5 @@ Packages:
 - capi-network-bluetooth-test
 - bluez-test
 #From TRE-207
-- libnsd-dns-ds
+- libnsd-dns-sd
 - libnsd-ssdp
