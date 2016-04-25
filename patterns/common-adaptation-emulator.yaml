@@ -1,0 +1,6 @@
+Summary: Common Adaptation Emulator
+Description: Common Adaptation Emulator
+Name: common-adaptation-emulator
+Packages:
+- audio-hal-emul
+- mmfw-sysconf-simulator
