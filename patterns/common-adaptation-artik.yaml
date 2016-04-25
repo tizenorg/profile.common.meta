@@ -242,3 +242,5 @@ Packages:
 - ise-engine-unikey
 #From TRE-218
 - bluetooth-firmware-bcm-artik
+#From TRE-220
+- org.tizen.dpm-toolkit
