@@ -240,3 +240,5 @@ Packages:
 - libnsd-ssdp
 #From TRE-214
 - ise-engine-unikey
+#From TRE-220
+- org.tizen.dpm-toolkit

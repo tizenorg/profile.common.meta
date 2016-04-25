@@ -10,3 +10,5 @@ Packages:
 - libomxil-e54xx
 - libwayland-egl
 - libtpl-egl
+#From TRE-220
+- org.tizen.dpm-toolkit
