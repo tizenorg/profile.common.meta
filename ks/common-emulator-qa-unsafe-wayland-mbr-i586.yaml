@@ -9,7 +9,7 @@ InstallerFrameworkPlugins:
 Part: common-mbr
 Mic2Options: -f loop --pack-to=@NAME@.tar.gz --copy-kernel
 FileName: common-emulator-qa-unsafe-wayland-mbr-i586
-Kernel: kernel-common-i386-emulator
+Kernel: emulator-kernel
 Repos:
     - common-emulator-wayland_i586
     - base_emulator32
