@@ -4,4 +4,3 @@ Name: common-adaptation-intel
 Packages:
 - libtdm-drm
 - libtbm-dumb
-- audio-hal-max98090
