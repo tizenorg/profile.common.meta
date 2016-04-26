@@ -464,5 +464,3 @@ Packages:
 - libnsd-ssdp
 #From TRE-216
 - dbus-libs
-#From TRE-218
-- bluetooth-firmware-bcm-artik

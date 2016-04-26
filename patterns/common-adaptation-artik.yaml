@@ -240,5 +240,3 @@ Packages:
 - libnsd-ssdp
 #From TRE-214
 - ise-engine-unikey
-#From TRE-218
-- bluetooth-firmware-bcm-artik
