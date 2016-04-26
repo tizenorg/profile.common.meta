@@ -20,7 +20,6 @@ Packages:
 - bluetooth-frwk-core
 - bluetooth-frwk-service
 - bluetooth-share
-- bluetooth-tools-no-firmware
 - obexd
 #From Generic Crosswalk
 - crosswalk-tizen

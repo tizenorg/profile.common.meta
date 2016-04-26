@@ -24,7 +24,6 @@ Packages:
 - bluetooth-frwk-service
 - bluetooth-share
 - bluetooth-tools
-- bluetooth-tools-no-firmware
 - bluez
 - boost-license1_57_0
 - boot-animation
