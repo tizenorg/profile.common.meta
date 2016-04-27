@@ -15,7 +15,6 @@ Packages:
 - app-svc
 - appcore-widget
 - attr
-- audio-hal-max98090
 - aul
 - badge
 - bash
@@ -464,3 +463,5 @@ Packages:
 - libnsd-ssdp
 #From TRE-216
 - dbus-libs
+#From TRE-228
+- audio-hal-ak4953

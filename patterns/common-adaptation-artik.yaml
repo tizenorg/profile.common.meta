@@ -5,7 +5,6 @@ Packages:
 #From Common Adaptation Odroid U3
 - libtbm-exynos
 - libtdm-drm
-- audio-hal-max98090
 - system-plugin-u3
 - mmfw-sysconf-target-u3
 - libomxil-e54xx
@@ -242,3 +241,5 @@ Packages:
 - ise-engine-unikey
 #From TRE-220
 - org.tizen.dpm-toolkit
+#From TRE-228
+- audio-hal-ak4953
