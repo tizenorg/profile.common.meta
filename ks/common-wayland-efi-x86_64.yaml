@@ -13,6 +13,7 @@ Repos:
     - common-wayland_x86_64
     - base_x86_64
 Groups:
+    - Common Adaptation Emulator
     - Common Adaptation Intel
     - Generic Multimedia Intel
     - Generic Setup Boot

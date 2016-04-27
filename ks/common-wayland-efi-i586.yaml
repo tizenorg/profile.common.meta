@@ -13,6 +13,7 @@ Repos:
     - common-wayland_i586
     - base_ia32
 Groups:
+    - Common Adaptation Emulator
     - Common Adaptation Intel
     - Generic Multimedia Intel
     - Generic Setup Boot
