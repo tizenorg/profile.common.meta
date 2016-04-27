@@ -243,3 +243,6 @@ Packages:
 - org.tizen.dpm-toolkit
 #From TRE-228
 - audio-hal-ak4953
+#From TRE-231
+- wifi-direct-manager
+- wifi-direct-plugin-wpasupplicant

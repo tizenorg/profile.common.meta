@@ -27,3 +27,6 @@ Packages:
 - gssdp
 - libnsd-dns-sd
 - libnsd-ssdp
+#From TRE-231
+- wifi-direct-manager
+- wifi-direct-plugin-wpasupplicant
