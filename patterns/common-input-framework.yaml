@@ -16,3 +16,5 @@ Packages:
 - org.tizen.inputmethod-setting
 #From TRE-214
 - ise-engine-unikey
+#From TRE-244
+- isf-config-common

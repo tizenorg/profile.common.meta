@@ -246,3 +246,5 @@ Packages:
 #From TRE-231
 - wifi-direct-manager
 - wifi-direct-plugin-wpasupplicant
+#From TRE-244
+- isf-config-common
