@@ -6,7 +6,6 @@ Packages:
 - libtbm-exynos
 - libtdm-drm
 - system-plugin-u3
-- mmfw-sysconf-target-u3
 - libomxil-e54xx
 #From Generic Adaptation
 - linux-firmware
@@ -248,3 +247,5 @@ Packages:
 - wifi-direct-plugin-wpasupplicant
 #From TRE-244
 - isf-config-common
+#From TRE-249
+- mmfw-sysconf-target-artik10
