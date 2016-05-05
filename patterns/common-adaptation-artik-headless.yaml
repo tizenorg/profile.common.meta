@@ -262,8 +262,6 @@ Packages:
 - libphonenumber
 - libpng
 - libpopt
-- libprivilege-control
-- libprivilege-control-conf
 - libprotobuf9
 - libpth
 - libpulse
