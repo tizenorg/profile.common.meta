@@ -248,3 +248,5 @@ Packages:
 - isf-config-common
 #From TRE-249
 - mmfw-sysconf-target-artik10
+#From TRE-254
+- libmm-imgp-gstcs
