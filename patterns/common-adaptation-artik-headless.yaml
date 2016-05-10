@@ -463,3 +463,5 @@ Packages:
 - dbus-libs
 #From TRE-228
 - audio-hal-ak4953
+#From TRE-262
+- memps
