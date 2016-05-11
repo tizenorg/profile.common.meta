@@ -11,3 +11,5 @@ Repos:
     - base_arm
 Groups:
     - Common Adaptation Artik
+RemovePackages:
+    - bluetooth-tools-no-firmware
