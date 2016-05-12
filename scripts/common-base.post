@@ -6,11 +6,11 @@ if ! generic_base_user_exists owner; then
 	gum-utils --offline --add-user --username=owner --usertype=admin --usecret=tizen
 fi
 
-for user in alice bob carol guest; do
-	if ! generic_base_user_exists $user; then
-		gum-utils --offline --add-user --username="$user" --usertype=normal --usecret=tizen
-	fi
-done
+#for user in alice bob carol guest; do
+#	if ! generic_base_user_exists $user; then
+#		gum-utils --offline --add-user --username="$user" --usertype=normal --usecret=tizen
+#	fi
+#done
 
 ######### add 'guest' user that runs bt-service daemon to vconf_bt group
 function mygetid() { sed '/^'"$1"':/!d;s/^\([^:]*:\)\{2\}\([^:]*\):.*$/\2/' "$2"; }
