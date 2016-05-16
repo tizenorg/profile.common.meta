@@ -254,3 +254,5 @@ Packages:
 - memps
 #From TRE-273
 -  media-thumbnail-server
+#From TRE-285
+- esd
