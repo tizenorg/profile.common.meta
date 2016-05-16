@@ -252,3 +252,5 @@ Packages:
 - libmm-imgp-gstcs
 #From TRE-262
 - memps
+#From TRE-273
+-  media-thumbnail-server
