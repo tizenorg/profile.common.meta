@@ -25,7 +25,7 @@ Packages:
 - bluetooth-tools
 - bluetooth-tools-no-firmware
 - bluez
-- boost-license1_57_0
+- boost-license
 - boot-animation
 - browser-provider
 - bundle
@@ -164,10 +164,10 @@ Packages:
 - libblkid
 - libbluetooth-share
 - libbmp
-- libboost_filesystem1_57_0
-- libboost_program_options1_57_0
-- libboost_system1_57_0
-- libboost_thread1_57_0
+- boost-filesystem
+- boost-program-options
+- boost-system
+- boost-thread
 - libbz2
 - libcap
 - libcares

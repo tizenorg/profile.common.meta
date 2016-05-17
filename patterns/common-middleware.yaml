@@ -10,9 +10,9 @@ Packages:
 - auth-fw
 - libauth-fw-client
 - libauth-fw-client-admin
-- libboost_program_options1_57_0
-- libboost_regex1_57_0
-- libboost_date_time1_57_0
+- boost-program-options
+- boost-regex
+- boost-date-time
 - efl-theme-tizen-common
 - privacy-manager-server
 - privacy-manager-client
