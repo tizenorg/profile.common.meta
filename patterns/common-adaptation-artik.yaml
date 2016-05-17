@@ -40,6 +40,8 @@ Packages:
 #From Generic Adaptation
 - linux-firmware
 - system-plugin
+#From Common Adaptation
+- meta-generic-adaptation
 #From Generic Applications
 - ca-certificates
 #From Generic Bluetooth
