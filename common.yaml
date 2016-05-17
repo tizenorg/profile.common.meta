@@ -17,12 +17,8 @@ Default:
     Desktop: None
     SaveRepos: False
     UserGroups: "audio,video"
-    Groups:
-        - Generic Adaptation
-        - Common Adaptation
-    PostScripts:
-        - generic-adaptation
-        - common-adaptation
+    Groups: []
+    PostScripts: []
     NoChrootScripts:
         - buildname
 
@@ -33,6 +29,8 @@ Minimal:
 Artik:
     Part: common-mbr-3parts
     PostScripts:
+        - generic-adaptation
+        - common-adaptation
         - generic-base
         - common-base
         - generic-wayland
@@ -105,6 +103,8 @@ Wayland:
     Part: common-mbr
     UserGroups: "audio,video"
     Groups:
+        - Generic Adaptation
+        - Common Adaptation
         - Generic Base
         - Common Base
         - Generic Console Tools
@@ -131,6 +131,8 @@ Wayland:
         - Common Input Framework
         - Common Telephony
     PostScripts:
+        - generic-adaptation
+        - common-adaptation
         - generic-base
         - common-base
         - generic-console-tools
