@@ -174,7 +174,6 @@ Packages:
 - webapi-plugins
 - browser-provider
 - cordova-api
-- jsnative
 - tizen-locale
 - gst-libav
 - org.tizen.menu-screen
