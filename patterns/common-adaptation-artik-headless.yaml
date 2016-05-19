@@ -464,3 +464,17 @@ Packages:
 - audio-hal-ak4953
 #From TRE-262
 - memps
+#From TRE-308
+- libmm-camcorder
+- libmm-evas-renderer
+- libmm-player
+- libmm-streamrecorder
+- libtbm-exynos
+- libtdm-drm
+- libwayland-extension-server
+- mmsvc-camera
+- mmsvc-player
+- mmsvc-recorder
+- wgt-backend
+- widget_toolkit
+- wrt-widgets
