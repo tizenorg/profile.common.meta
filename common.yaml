@@ -46,6 +46,7 @@ Artik:
         - common-crosswalk
         - generic-qt5
         - common-qt5
+		- generic-security
     Repos: []
 
 Installer:
@@ -146,4 +147,5 @@ Wayland:
         - common-crosswalk
         - generic-qt5
         - common-qt5
+		- generic-security
     Repos: []
