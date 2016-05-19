@@ -156,7 +156,6 @@ Packages:
 - iotcon
 - libcore-sync-client
 - libeom
-- libpush
 - minicontrol
 - motion
 - oauth2
