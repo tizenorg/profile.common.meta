@@ -18,7 +18,6 @@ Packages:
 - bluetooth-frwk-core
 - bluetooth-frwk-service
 - bluetooth-share
-- bluetooth-tools-no-firmware
 - obexd
 #From Generic Crosswalk
 - crosswalk-tizen
@@ -254,3 +253,5 @@ Packages:
 - media-thumbnail-server
 #From TRE-285
 - esd
+#From TRE-218
+- bluetooth-firmware-bcm-artik

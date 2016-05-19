@@ -23,7 +23,6 @@ Packages:
 - bluetooth-frwk-service
 - bluetooth-share
 - bluetooth-tools
-- bluetooth-tools-no-firmware
 - bluez
 - boost-license
 - boot-animation
@@ -478,3 +477,5 @@ Packages:
 - wgt-backend
 - widget_toolkit
 - wrt-widgets
+#From TRE-218
+- bluetooth-firmware-bcm-artik
