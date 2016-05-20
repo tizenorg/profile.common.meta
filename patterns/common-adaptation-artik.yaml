@@ -2,6 +2,36 @@ Summary: Common Adaptation Artik
 Description: Common Adaptation Artik
 Name: common-adaptation-artik
 Packages:
+#From Generic Base
+- e2fsprogs
+- connman
+- rfkill
+- util-linux
+- kmod-compat
+- kmod
+- tzdata
+- pwdutils
+- pam
+- setup
+- filesystem
+- systemd
+- bash
+- coreutils
+- rpm
+- rpm-security-plugin
+- default-ac-domains
+- tizen-release
+- pam-locale
+- procps-ng
+- psmisc
+- net-tools
+- glibc-locale
+- wpa_supplicant
+- gum-utils
+- tlm
+#From Common Base
+- security-manager
+- capi-base-utils
 #From Common Adaptation Odroid U3
 - libtbm-exynos
 - libtdm-drm
