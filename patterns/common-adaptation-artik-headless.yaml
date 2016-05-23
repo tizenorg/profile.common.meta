@@ -373,7 +373,7 @@ Packages:
 - pulseaudio-module-bluetooth
 - pulseaudio-modules-tizen
 - pulseaudio-utils
-- pwdutils
+- shadow-utils
 - python
 - resourced
 - rfkill

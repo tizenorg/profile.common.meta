@@ -10,7 +10,7 @@ Packages:
 - kmod-compat
 - kmod
 - tzdata
-- pwdutils
+- shadow-utils
 - pam
 - setup
 - filesystem
