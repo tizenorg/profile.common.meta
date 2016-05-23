@@ -4,3 +4,6 @@ Name: common-base
 Packages:
 - security-manager
 - capi-base-utils
+#From TRE-275
+- newfs-msdos
+- fsck-msdos

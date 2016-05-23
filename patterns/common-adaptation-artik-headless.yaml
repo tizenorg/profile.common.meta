@@ -500,3 +500,6 @@ Packages:
 - gstreamer-utils
 - gst-rtsp-server
 - mused
+#From TRE-275
+- newfs-msdos
+- fsck-msdos

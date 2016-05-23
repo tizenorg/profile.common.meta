@@ -284,3 +284,6 @@ Packages:
 - media-thumbnail-server
 #From TRE-285
 - esd
+#From TRE-275
+- newfs-msdos
+- fsck-msdos
