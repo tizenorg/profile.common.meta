@@ -503,3 +503,5 @@ Packages:
 #From TRE-275
 - newfs-msdos
 - fsck-msdos
+#From TRE-324
+- e-tizen-data
