@@ -505,3 +505,5 @@ Packages:
 - fsck-msdos
 #From TRE-324
 - e-tizen-data
+#From TRE-334
+- mmfw-sysconf-target-artik10
