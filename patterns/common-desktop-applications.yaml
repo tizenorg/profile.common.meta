@@ -3,6 +3,4 @@ Description: Common Desktop Applications
 Name: common-desktop-applications
 Packages:
 - elementary-tools
-- org.tizen.homescreen
-- org.tizen.homescreen-efl
 - org.tizen.elm-demo-tizen-common

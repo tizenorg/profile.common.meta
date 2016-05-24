@@ -137,8 +137,6 @@ Packages:
 - boot-animation
 #From Common Desktop Applications
 - elementary-tools
-- org.tizen.homescreen
-- org.tizen.homescreen-efl
 - org.tizen.elm-demo-tizen-common
 #From Common Crosswalk
 - wrt-widgets
