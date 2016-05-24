@@ -507,3 +507,5 @@ Packages:
 - e-tizen-data
 #From TRE-334
 - mmfw-sysconf-target-artik10
+#From TRE-329
+- ttrace-extension

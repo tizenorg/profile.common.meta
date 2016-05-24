@@ -7,3 +7,5 @@ Packages:
 - tree
 - vim
 - usbutils
+#From TRE-329
+- ttrace-extension

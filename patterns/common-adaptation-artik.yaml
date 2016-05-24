@@ -287,3 +287,5 @@ Packages:
 #From TRE-275
 - newfs-msdos
 - fsck-msdos
+#From TRE-329
+- ttrace-extension
