@@ -333,7 +333,6 @@ Packages:
 - net-config
 - nether
 - net-tools
-- nfc-client-lib
 - nfc-common-lib
 - nghttp2
 - nodejs
