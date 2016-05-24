@@ -32,3 +32,5 @@ Packages:
 - wifi-direct-plugin-wpasupplicant
 #From TRE-285
 - esd
+#From TRE-335
+- message-port
