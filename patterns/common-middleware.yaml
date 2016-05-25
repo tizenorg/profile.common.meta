@@ -17,7 +17,6 @@ Packages:
 - privacy-manager-server
 - privacy-manager-client
 - device-policy-manager
-- dpm-pam-zone
 - libdpm
 - app2sd
 - dlogutil

@@ -232,11 +232,9 @@ Packages:
 - org.tizen.setting
 #From TRE-71
 - device-policy-manager
-- dpm-pam-zone
 - libdpm
 - org.tizen.ode
 - org.tizen.dpm-syspopup
-- org.tizen.zone-setup-wizard
 #From TRE-168
 - app2sd
 #From TRE-178
