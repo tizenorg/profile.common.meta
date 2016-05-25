@@ -41,7 +41,6 @@ Packages:
 - linux-firmware
 - system-plugin
 #From Generic Applications
-- ail
 - ca-certificates
 #From Generic Bluetooth
 - bluez

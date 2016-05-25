@@ -3,7 +3,6 @@ Description: Common Adaptation Artik Headless
 Name: common-adaptation-artik-headless
 Packages:
 - account-common
-- ail
 - alarm-server
 - alsa-utils
 - amd
