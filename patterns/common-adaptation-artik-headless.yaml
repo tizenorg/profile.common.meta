@@ -507,3 +507,5 @@ Packages:
 - mmfw-sysconf-target-artik10
 #From TRE-329
 - ttrace-extension
+#From TRE-345
+- libcynara-monitor

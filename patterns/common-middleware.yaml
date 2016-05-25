@@ -33,3 +33,5 @@ Packages:
 - esd
 #From TRE-335
 - message-port
+#From TRE-345
+- libcynara-monitor

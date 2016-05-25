@@ -286,3 +286,5 @@ Packages:
 - ttrace-extension
 #From TRE-335
 - message-port
+#From TRE-345
+- libcynara-monitor
