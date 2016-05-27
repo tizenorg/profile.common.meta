@@ -288,3 +288,15 @@ Packages:
 - message-port
 #From TRE-345
 - libcynara-monitor
+#From TRE-349
+- dali
+- dali-toolkit
+- dali-adaptor
+- libharfbuzz
+- libpepper-efl
+- libwidget_service
+- libwidget_viewer_evas
+- libwidget_viewer
+- nfc-client-lib-neard
+- pepper
+- widget_toolkit
