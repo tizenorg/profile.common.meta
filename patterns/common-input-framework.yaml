@@ -18,3 +18,5 @@ Packages:
 - ise-engine-unikey
 #From TRE-244
 - isf-config-common
+#From TRE-346
+- stt-engine-default

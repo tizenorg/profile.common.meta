@@ -509,3 +509,5 @@ Packages:
 - ttrace-extension
 #From TRE-345
 - libcynara-monitor
+#From TRE-346
+- stt-engine-default

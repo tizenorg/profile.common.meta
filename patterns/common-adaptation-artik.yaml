@@ -300,3 +300,5 @@ Packages:
 - nfc-client-lib-neard
 - pepper
 - widget_toolkit
+#From TRE-346
+- stt-engine-default
