@@ -125,7 +125,6 @@ Packages:
 - libwayland-tbm-server
 - xkb-tizen-data
 #From Common Middleware
-- model-config-generic
 - ofono
 - neard
 - neardal
@@ -302,3 +301,5 @@ Packages:
 - widget_toolkit
 #From TRE-346
 - stt-engine-default
+#From TRE-376
+- model-config-artik
