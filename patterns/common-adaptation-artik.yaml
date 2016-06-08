@@ -124,7 +124,6 @@ Packages:
 - libwayland-tbm-server
 - xkb-tizen-data
 #From Common Middleware
-- model-config-generic
 - ofono
 - neard
 - neardal
@@ -303,3 +302,5 @@ Packages:
 - stt-engine-default
 #From TRE-218
 - bluetooth-firmware-bcm-artik
+#From TRE-376
+- model-config-artik

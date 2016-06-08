@@ -322,7 +322,6 @@ Packages:
 - meta-generic-adaptation
 - minicontrol
 - minizip
-- model-config-generic
 - motion
 - murphy-glib
 - murphy
@@ -512,3 +511,5 @@ Packages:
 - stt-engine-default
 #From TRE-218
 - bluetooth-firmware-bcm-artik
+#From TRE-376
+- model-config-artik
