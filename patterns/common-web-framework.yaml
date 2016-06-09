@@ -3,3 +3,5 @@ Description: Common Web Framework
 Name: common-web-framework
 Packages:
 - libwebsockets
+#From TRE-384
+- libv8
