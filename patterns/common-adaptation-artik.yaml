@@ -305,3 +305,5 @@ Packages:
 - model-config-artik
 #From TRE-384
 - libv8
+#From TRE-386
+- alsa-ucm-data-ak4953
