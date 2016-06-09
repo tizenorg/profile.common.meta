@@ -512,3 +512,5 @@ Packages:
 - stt-engine-default
 #From TRE-376
 - model-config-artik
+#From TRE-384
+- v8
