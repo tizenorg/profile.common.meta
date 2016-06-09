@@ -35,3 +35,5 @@ Packages:
 - message-port
 #From TRE-345
 - libcynara-monitor
+#From TRE-380
+- argos_watchdog
