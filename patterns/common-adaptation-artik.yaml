@@ -308,3 +308,5 @@ Packages:
 - libv8
 #From TRE-386
 - alsa-ucm-data-ak4953
+#From TRE-380
+- argos_watchdog

@@ -515,3 +515,5 @@ Packages:
 - model-config-artik
 #From TRE-384
 - libv8
+#From TRE-380
+- argos_watchdog
