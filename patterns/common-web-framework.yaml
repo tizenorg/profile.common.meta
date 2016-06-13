@@ -4,4 +4,4 @@ Name: common-web-framework
 Packages:
 - libwebsockets
 #From TRE-384
-- libv8
+- v8
