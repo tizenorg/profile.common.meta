@@ -517,3 +517,5 @@ Packages:
 - v8
 #From TRE-380
 - argos_watchdog
+#From TRE-396
+- libcsr-framework-client
