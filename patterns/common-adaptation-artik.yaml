@@ -310,3 +310,10 @@ Packages:
 - alsa-ucm-data-ak4953
 #From TRE-380
 - argos_watchdog
+#From TRE-396
+- libcsr-framework-client
+#From TRE-395
+- askuser
+- askuser-notification
+- askuser-plugins
+- libaskuser-common

@@ -37,3 +37,11 @@ Packages:
 - libcynara-monitor
 #From TRE-380
 - argos_watchdog
+#From TRE-396
+- csr-framework
+- libcsr-framework-client
+#From TRE-395
+- askuser
+- askuser-notification
+- askuser-plugins
+- libaskuser-common
