@@ -519,3 +519,6 @@ Packages:
 - argos_watchdog
 #From TRE-396
 - libcsr-framework-client
+#From TRE-401
+- cryptsetup
+- device-mapper
