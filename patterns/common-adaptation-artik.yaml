@@ -320,3 +320,5 @@ Packages:
 #From TRE-401
 - cryptsetup
 - device-mapper
+#From TRE-409
+- device-manager-plugin-artik
