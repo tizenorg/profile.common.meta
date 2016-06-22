@@ -48,3 +48,5 @@ Packages:
 #From TRE-401
 - cryptsetup
 - device-mapper
+#From TRE-426
+- capi-system-media-key
