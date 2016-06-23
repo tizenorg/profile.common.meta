@@ -2,3 +2,7 @@ Repositories:
     -   Name: common-wayland_armv7l
         Url:  http://download.tizen.org/snapshots/tizen/common_artik/@BUILD_ID@/repos/arm-wayland/packages/
         Options: --ssl_verify=no
+
+    -   Name: base_arm
+        Url:  http://download.tizen.org/snapshots/tizen/base/latest/repos/arm/packages/
+        Options: --ssl_verify=no
