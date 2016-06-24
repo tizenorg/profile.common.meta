@@ -1,6 +1,11 @@
 #!/bin/sh
 echo "############### common-crosswalk.post ################"
 
+# workaround to stop xwalk from dumping and killing flash
+if [ -f /usr/bin/wrt-loader ] ; then
+	mv /usr/bin/wrt-loader /usr/bin/wrt-loader2
+fi
+
 # start wrt widgets preinstall
 prepare_widgets.sh
 
