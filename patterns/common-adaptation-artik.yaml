@@ -119,7 +119,6 @@ Packages:
 - xkeyboard-config
 #From Common Wayland
 - tlm-config-common-singleseat
-- desktop-skin
 - libwayland-tbm-client
 - libwayland-tbm-server
 - xkb-tizen-data
@@ -136,7 +135,6 @@ Packages:
 - elementary-tools
 - org.tizen.elm-demo-tizen-common
 #From Common Crosswalk
-- wrt-widgets
 - wgt-backend
 #From Common EFL
 - efl-config
