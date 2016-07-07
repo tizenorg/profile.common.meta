@@ -320,3 +320,5 @@ Packages:
 - device-mapper
 #From TRE-409
 - device-manager-plugin-artik
+#From TRE-463
+- dali-adaptor-dali-video-player-plugin
