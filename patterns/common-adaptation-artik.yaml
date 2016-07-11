@@ -123,7 +123,6 @@ Packages:
 - libwayland-tbm-server
 - xkb-tizen-data
 #From Common Middleware
-- ofono
 - neard
 - neardal
 - tzsh
@@ -248,7 +247,6 @@ Packages:
 - mdnsresponder
 - gssdp
 - capi-network-bluetooth-test
-- bluez-test
 - org.tizen.bt-syspopup
 - efl-assist
 #From TRE-207
