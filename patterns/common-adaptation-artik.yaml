@@ -114,8 +114,6 @@ Packages:
 - gstreamer
 - gstreamer-utils
 #From Generic Wayland
-- cantarell-fonts
-- dejavu-fonts
 - xkeyboard-config
 #From Common Wayland
 - tlm-config-common-singleseat

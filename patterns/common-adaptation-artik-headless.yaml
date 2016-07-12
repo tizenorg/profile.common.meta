@@ -78,7 +78,6 @@ Packages:
 - default-ac-domains
 - default-fonts-fc-sdk
 - default-fonts-sdk
-- dejavu-fonts
 - deviced
 - deviced-tools
 - dlogutil
